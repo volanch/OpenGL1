@@ -20,6 +20,7 @@ public:
 
     void Activate();
     void Delete();
+    void SetVec3(const char* name, float x, float y, float z);
 };
 
 #endif //COMPUTERGRAPHICSPROJECT_SHADERCLASS_H

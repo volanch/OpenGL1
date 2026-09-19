@@ -1,12 +1,11 @@
 #include<iostream>
 #include<glad/glad.h>
 #include<GLFW/glfw3.h>
-#include <cmath>
+#include<cmath>
 
-#include"shaderClass.h"
-#include"VBO.h"
-#include"EBO.h"
 #include"VAO.h"
+#include"VBO.h"
+#include"shaderClass.h"
 
 int main()
 {
@@ -19,19 +18,12 @@ int main()
 
 	GLfloat vertices[] =
 	{
-		-0.5f, -0.5f, 0.0f,
-		 0.5f, -0.5f, 0.0f,
-		 0.5f,  0.5f, 0.0f,
-		-0.5f,  0.5f, 0.0f,
+		-0.5f, -0.5f, // * float(sqrt(3)) / 3,
+		0.5f, -0.5f, // * float(sqrt(3)) / 3,
+		0.0f, 0.5f, // * float(sqrt(3)) * 2 / 3, 0.0f,
 	};
 
-	GLuint indices[] =
-	{
-		0, 1, 2,  // bottom left, bottom right, top right
-		0, 2, 3,  // bottom left, top right, top left
-	};
-
-	GLFWwindow* window = glfwCreateWindow(800, 800, "My Window", NULL, NULL);
+	GLFWwindow* window = glfwCreateWindow(800, 800, "Task 1 - Red triangle", NULL, NULL);
 
 	if (window == NULL)
 	{
@@ -48,18 +40,16 @@ int main()
 	// render
 	glViewport(0, 0, 800, 800);
 
-	Shader shaderProgram("default.vert", "default.frag");
+	Shader shaderProgram("solid.vert", "solid.frag");
 
 	VAO VAO1;
 	VAO1.Bind();
 
 	VBO VBO1(vertices, sizeof(vertices));
-	EBO EBO1(indices, sizeof(indices));
+	VAO1.LinkVBO(VBO1, 0, 2);
 
-	VAO1.LinkVBO(VBO1, 0);
 	VAO1.Unbind();
 	VBO1.Unbind();
-	EBO1.Unbind();
 
 	while (!glfwWindowShouldClose(window))
 	{
@@ -67,8 +57,9 @@ int main()
 		// clean the back buffer with my color
 		glClear(GL_COLOR_BUFFER_BIT);
 		shaderProgram.Activate();
+		shaderProgram.SetVec3("uColor", 1.0f, 0.0f, 0.0f); //red
 		VAO1.Bind();
-		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+		glDrawArrays(GL_TRIANGLES, 0, 3);
 		glfwSwapBuffers(window);
 		// all GLFW events
 		glfwPollEvents();
@@ -76,7 +67,6 @@ int main()
 
 	VAO1.Delete();
 	VBO1.Delete();
-	EBO1.Delete();
 	shaderProgram.Delete();
 
 	glfwDestroyWindow(window);

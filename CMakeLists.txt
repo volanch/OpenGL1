@@ -23,9 +23,9 @@ FetchContent_MakeAvailable(glm)
 
 # Создаем исполняемый файл и добавляем GLAD (glad.c)
 add_executable(ComputerGraphicsProject
-        main.cpp
+        #red_triangle.cpp
         src/glad.c
-        #square.cpp
+        #blue_square.cpp
         Header/shaderClass.h
         "Source Files/shaderClass.cpp"
         Header/VBO.h
@@ -34,7 +34,9 @@ add_executable(ComputerGraphicsProject
         "Source Files/EBO.cpp"
         Header/VAO.h
         "Source Files/VAO.cpp"
+        Header/shapeGen.h
         #polygons_part1.cpp
+        polygons_part2.cpp
 )
 
 # Подключаем пути к заголовочным файлам (включая GLAD)
@@ -45,6 +47,7 @@ target_link_libraries(ComputerGraphicsProject PRIVATE glfw glm)
 
 target_include_directories(ComputerGraphicsProject PRIVATE Header include)
 
-file(COPY "${CMAKE_SOURCE_DIR}/Resource Files/Shaders/default.vert"
-        "${CMAKE_SOURCE_DIR}/Resource Files/Shaders/default.frag"
-        DESTINATION ${CMAKE_BINARY_DIR})
+file(GLOB SHADER_FILES "${CMAKE_SOURCE_DIR}/Resource Files/Shaders/*.vert"
+        "${CMAKE_SOURCE_DIR}/Resource Files/Shaders/*.frag")
+file(COPY ${SHADER_FILES} DESTINATION ${CMAKE_BINARY_DIR})
+

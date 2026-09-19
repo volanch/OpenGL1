@@ -46,3 +46,7 @@ void Shader::Activate() {
 void Shader::Delete() {
     glDeleteProgram(ID);
 }
+
+void Shader::SetVec3(const char* name, float x, float y, float z) {
+    glUniform3f(glGetUniformLocation(ID, name), x, y, z);
+}
