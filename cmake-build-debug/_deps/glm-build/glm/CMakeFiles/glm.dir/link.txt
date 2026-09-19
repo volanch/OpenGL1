@@ -1,0 +1,2 @@
+"D:\CLion 2026.2.2\bin\mingw\bin\ar.exe" qc libglm.a CMakeFiles/glm.dir/detail/glm.cpp.obj
+"D:\CLion 2026.2.2\bin\mingw\bin\ranlib.exe" libglm.a
