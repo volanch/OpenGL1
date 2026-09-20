@@ -1,4 +1,7 @@
-C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/ComputerGraphicsProject.dir
+C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/red_triangle.dir
+C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/blue_square.dir
+C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/polygons_part1.dir
+C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/polygons_part2.dir
 C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/list_install_components.dir

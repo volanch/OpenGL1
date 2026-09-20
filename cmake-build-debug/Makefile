@@ -161,17 +161,56 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ComputerGraphicsProject
+# Target rules for targets named red_triangle
 
 # Build rule for target.
-ComputerGraphicsProject: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ComputerGraphicsProject
-.PHONY : ComputerGraphicsProject
+red_triangle: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 red_triangle
+.PHONY : red_triangle
 
 # fast build rule for target.
-ComputerGraphicsProject/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComputerGraphicsProject.dir\build.make CMakeFiles/ComputerGraphicsProject.dir/build
-.PHONY : ComputerGraphicsProject/fast
+red_triangle/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/build
+.PHONY : red_triangle/fast
+
+#=============================================================================
+# Target rules for targets named blue_square
+
+# Build rule for target.
+blue_square: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 blue_square
+.PHONY : blue_square
+
+# fast build rule for target.
+blue_square/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/build
+.PHONY : blue_square/fast
+
+#=============================================================================
+# Target rules for targets named polygons_part1
+
+# Build rule for target.
+polygons_part1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 polygons_part1
+.PHONY : polygons_part1
+
+# fast build rule for target.
+polygons_part1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/build
+.PHONY : polygons_part1/fast
+
+#=============================================================================
+# Target rules for targets named polygons_part2
+
+# Build rule for target.
+polygons_part2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 polygons_part2
+.PHONY : polygons_part2
+
+# fast build rule for target.
+polygons_part2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/build
+.PHONY : polygons_part2/fast
 
 #=============================================================================
 # Target rules for targets named uninstall
@@ -230,7 +269,10 @@ Source_Files/EBO.obj: Source_Files/EBO.cpp.obj
 
 # target to build an object file
 Source_Files/EBO.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComputerGraphicsProject.dir\build.make CMakeFiles/ComputerGraphicsProject.dir/Source_Files/EBO.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/Source_Files/EBO.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/Source_Files/EBO.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/Source_Files/EBO.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/Source_Files/EBO.cpp.obj
 .PHONY : Source_Files/EBO.cpp.obj
 
 Source_Files/EBO.i: Source_Files/EBO.cpp.i
@@ -238,7 +280,10 @@ Source_Files/EBO.i: Source_Files/EBO.cpp.i
 
 # target to preprocess a source file
 Source_Files/EBO.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComputerGraphicsProject.dir\build.make CMakeFiles/ComputerGraphicsProject.dir/Source_Files/EBO.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/Source_Files/EBO.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/Source_Files/EBO.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/Source_Files/EBO.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/Source_Files/EBO.cpp.i
 .PHONY : Source_Files/EBO.cpp.i
 
 Source_Files/EBO.s: Source_Files/EBO.cpp.s
@@ -246,7 +291,10 @@ Source_Files/EBO.s: Source_Files/EBO.cpp.s
 
 # target to generate assembly for a file
 Source_Files/EBO.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComputerGraphicsProject.dir\build.make CMakeFiles/ComputerGraphicsProject.dir/Source_Files/EBO.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/Source_Files/EBO.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/Source_Files/EBO.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/Source_Files/EBO.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/Source_Files/EBO.cpp.s
 .PHONY : Source_Files/EBO.cpp.s
 
 Source_Files/VAO.obj: Source_Files/VAO.cpp.obj
@@ -254,7 +302,10 @@ Source_Files/VAO.obj: Source_Files/VAO.cpp.obj
 
 # target to build an object file
 Source_Files/VAO.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComputerGraphicsProject.dir\build.make CMakeFiles/ComputerGraphicsProject.dir/Source_Files/VAO.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/Source_Files/VAO.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/Source_Files/VAO.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/Source_Files/VAO.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/Source_Files/VAO.cpp.obj
 .PHONY : Source_Files/VAO.cpp.obj
 
 Source_Files/VAO.i: Source_Files/VAO.cpp.i
@@ -262,7 +313,10 @@ Source_Files/VAO.i: Source_Files/VAO.cpp.i
 
 # target to preprocess a source file
 Source_Files/VAO.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComputerGraphicsProject.dir\build.make CMakeFiles/ComputerGraphicsProject.dir/Source_Files/VAO.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/Source_Files/VAO.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/Source_Files/VAO.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/Source_Files/VAO.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/Source_Files/VAO.cpp.i
 .PHONY : Source_Files/VAO.cpp.i
 
 Source_Files/VAO.s: Source_Files/VAO.cpp.s
@@ -270,7 +324,10 @@ Source_Files/VAO.s: Source_Files/VAO.cpp.s
 
 # target to generate assembly for a file
 Source_Files/VAO.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComputerGraphicsProject.dir\build.make CMakeFiles/ComputerGraphicsProject.dir/Source_Files/VAO.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/Source_Files/VAO.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/Source_Files/VAO.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/Source_Files/VAO.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/Source_Files/VAO.cpp.s
 .PHONY : Source_Files/VAO.cpp.s
 
 Source_Files/VBO.obj: Source_Files/VBO.cpp.obj
@@ -278,7 +335,10 @@ Source_Files/VBO.obj: Source_Files/VBO.cpp.obj
 
 # target to build an object file
 Source_Files/VBO.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComputerGraphicsProject.dir\build.make CMakeFiles/ComputerGraphicsProject.dir/Source_Files/VBO.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/Source_Files/VBO.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/Source_Files/VBO.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/Source_Files/VBO.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/Source_Files/VBO.cpp.obj
 .PHONY : Source_Files/VBO.cpp.obj
 
 Source_Files/VBO.i: Source_Files/VBO.cpp.i
@@ -286,7 +346,10 @@ Source_Files/VBO.i: Source_Files/VBO.cpp.i
 
 # target to preprocess a source file
 Source_Files/VBO.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComputerGraphicsProject.dir\build.make CMakeFiles/ComputerGraphicsProject.dir/Source_Files/VBO.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/Source_Files/VBO.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/Source_Files/VBO.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/Source_Files/VBO.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/Source_Files/VBO.cpp.i
 .PHONY : Source_Files/VBO.cpp.i
 
 Source_Files/VBO.s: Source_Files/VBO.cpp.s
@@ -294,7 +357,10 @@ Source_Files/VBO.s: Source_Files/VBO.cpp.s
 
 # target to generate assembly for a file
 Source_Files/VBO.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComputerGraphicsProject.dir\build.make CMakeFiles/ComputerGraphicsProject.dir/Source_Files/VBO.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/Source_Files/VBO.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/Source_Files/VBO.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/Source_Files/VBO.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/Source_Files/VBO.cpp.s
 .PHONY : Source_Files/VBO.cpp.s
 
 Source_Files/shaderClass.obj: Source_Files/shaderClass.cpp.obj
@@ -302,7 +368,10 @@ Source_Files/shaderClass.obj: Source_Files/shaderClass.cpp.obj
 
 # target to build an object file
 Source_Files/shaderClass.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComputerGraphicsProject.dir\build.make CMakeFiles/ComputerGraphicsProject.dir/Source_Files/shaderClass.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/Source_Files/shaderClass.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/Source_Files/shaderClass.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/Source_Files/shaderClass.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/Source_Files/shaderClass.cpp.obj
 .PHONY : Source_Files/shaderClass.cpp.obj
 
 Source_Files/shaderClass.i: Source_Files/shaderClass.cpp.i
@@ -310,7 +379,10 @@ Source_Files/shaderClass.i: Source_Files/shaderClass.cpp.i
 
 # target to preprocess a source file
 Source_Files/shaderClass.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComputerGraphicsProject.dir\build.make CMakeFiles/ComputerGraphicsProject.dir/Source_Files/shaderClass.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/Source_Files/shaderClass.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/Source_Files/shaderClass.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/Source_Files/shaderClass.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/Source_Files/shaderClass.cpp.i
 .PHONY : Source_Files/shaderClass.cpp.i
 
 Source_Files/shaderClass.s: Source_Files/shaderClass.cpp.s
@@ -318,15 +390,66 @@ Source_Files/shaderClass.s: Source_Files/shaderClass.cpp.s
 
 # target to generate assembly for a file
 Source_Files/shaderClass.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComputerGraphicsProject.dir\build.make CMakeFiles/ComputerGraphicsProject.dir/Source_Files/shaderClass.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/Source_Files/shaderClass.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/Source_Files/shaderClass.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/Source_Files/shaderClass.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/Source_Files/shaderClass.cpp.s
 .PHONY : Source_Files/shaderClass.cpp.s
+
+blue_square.obj: blue_square.cpp.obj
+.PHONY : blue_square.obj
+
+# target to build an object file
+blue_square.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/blue_square.cpp.obj
+.PHONY : blue_square.cpp.obj
+
+blue_square.i: blue_square.cpp.i
+.PHONY : blue_square.i
+
+# target to preprocess a source file
+blue_square.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/blue_square.cpp.i
+.PHONY : blue_square.cpp.i
+
+blue_square.s: blue_square.cpp.s
+.PHONY : blue_square.s
+
+# target to generate assembly for a file
+blue_square.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/blue_square.cpp.s
+.PHONY : blue_square.cpp.s
+
+polygons_part1.obj: polygons_part1.cpp.obj
+.PHONY : polygons_part1.obj
+
+# target to build an object file
+polygons_part1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/polygons_part1.cpp.obj
+.PHONY : polygons_part1.cpp.obj
+
+polygons_part1.i: polygons_part1.cpp.i
+.PHONY : polygons_part1.i
+
+# target to preprocess a source file
+polygons_part1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/polygons_part1.cpp.i
+.PHONY : polygons_part1.cpp.i
+
+polygons_part1.s: polygons_part1.cpp.s
+.PHONY : polygons_part1.s
+
+# target to generate assembly for a file
+polygons_part1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/polygons_part1.cpp.s
+.PHONY : polygons_part1.cpp.s
 
 polygons_part2.obj: polygons_part2.cpp.obj
 .PHONY : polygons_part2.obj
 
 # target to build an object file
 polygons_part2.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComputerGraphicsProject.dir\build.make CMakeFiles/ComputerGraphicsProject.dir/polygons_part2.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/polygons_part2.cpp.obj
 .PHONY : polygons_part2.cpp.obj
 
 polygons_part2.i: polygons_part2.cpp.i
@@ -334,7 +457,7 @@ polygons_part2.i: polygons_part2.cpp.i
 
 # target to preprocess a source file
 polygons_part2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComputerGraphicsProject.dir\build.make CMakeFiles/ComputerGraphicsProject.dir/polygons_part2.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/polygons_part2.cpp.i
 .PHONY : polygons_part2.cpp.i
 
 polygons_part2.s: polygons_part2.cpp.s
@@ -342,15 +465,42 @@ polygons_part2.s: polygons_part2.cpp.s
 
 # target to generate assembly for a file
 polygons_part2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComputerGraphicsProject.dir\build.make CMakeFiles/ComputerGraphicsProject.dir/polygons_part2.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/polygons_part2.cpp.s
 .PHONY : polygons_part2.cpp.s
+
+red_triangle.obj: red_triangle.cpp.obj
+.PHONY : red_triangle.obj
+
+# target to build an object file
+red_triangle.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/red_triangle.cpp.obj
+.PHONY : red_triangle.cpp.obj
+
+red_triangle.i: red_triangle.cpp.i
+.PHONY : red_triangle.i
+
+# target to preprocess a source file
+red_triangle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/red_triangle.cpp.i
+.PHONY : red_triangle.cpp.i
+
+red_triangle.s: red_triangle.cpp.s
+.PHONY : red_triangle.s
+
+# target to generate assembly for a file
+red_triangle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/red_triangle.cpp.s
+.PHONY : red_triangle.cpp.s
 
 src/glad.obj: src/glad.c.obj
 .PHONY : src/glad.obj
 
 # target to build an object file
 src/glad.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComputerGraphicsProject.dir\build.make CMakeFiles/ComputerGraphicsProject.dir/src/glad.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/src/glad.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/src/glad.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/src/glad.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/src/glad.c.obj
 .PHONY : src/glad.c.obj
 
 src/glad.i: src/glad.c.i
@@ -358,7 +508,10 @@ src/glad.i: src/glad.c.i
 
 # target to preprocess a source file
 src/glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComputerGraphicsProject.dir\build.make CMakeFiles/ComputerGraphicsProject.dir/src/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/src/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/src/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/src/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/src/glad.c.i
 .PHONY : src/glad.c.i
 
 src/glad.s: src/glad.c.s
@@ -366,7 +519,10 @@ src/glad.s: src/glad.c.s
 
 # target to generate assembly for a file
 src/glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComputerGraphicsProject.dir\build.make CMakeFiles/ComputerGraphicsProject.dir/src/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/src/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/src/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/src/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/src/glad.c.s
 .PHONY : src/glad.c.s
 
 # Help Target
@@ -383,9 +539,12 @@ help:
 	@echo ... rebuild_cache
 	@echo ... uninstall
 	@echo ... update_mappings
-	@echo ... ComputerGraphicsProject
+	@echo ... blue_square
 	@echo ... glfw
 	@echo ... glm
+	@echo ... polygons_part1
+	@echo ... polygons_part2
+	@echo ... red_triangle
 	@echo ... Source_Files/EBO.obj
 	@echo ... Source_Files/EBO.i
 	@echo ... Source_Files/EBO.s
@@ -398,9 +557,18 @@ help:
 	@echo ... Source_Files/shaderClass.obj
 	@echo ... Source_Files/shaderClass.i
 	@echo ... Source_Files/shaderClass.s
+	@echo ... blue_square.obj
+	@echo ... blue_square.i
+	@echo ... blue_square.s
+	@echo ... polygons_part1.obj
+	@echo ... polygons_part1.i
+	@echo ... polygons_part1.s
 	@echo ... polygons_part2.obj
 	@echo ... polygons_part2.i
 	@echo ... polygons_part2.s
+	@echo ... red_triangle.obj
+	@echo ... red_triangle.i
+	@echo ... red_triangle.s
 	@echo ... src/glad.obj
 	@echo ... src/glad.i
 	@echo ... src/glad.s

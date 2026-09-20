@@ -56,26 +56,7 @@ make run-polygons_part2
 
 Close a window to exit.
 
-Or you can run it just by commenting all executable files except one and run it.
-example:
-```
-add_executable(ComputerGraphicsProject
-    #red_triangle.cpp
-    src/glad.c
-    #blue_square.cpp
-    Header/shaderClass.h
-    "Source Files/shaderClass.cpp"
-    Header/VBO.h
-    "Source Files/VBO.cpp"
-    Header/EBO.h
-    "Source Files/EBO.cpp"
-    Header/VAO.h
-    "Source Files/VAO.cpp"
-    Header/shapeGen.h
-    #polygons_part1.cpp
-    polygons_part2.cpp
-)
-```
+If you are in Clion just select executable and run it.
 
 ## Tested on
 

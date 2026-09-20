@@ -95,7 +95,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/ComputerGraphicsProject.dir/DependInfo.cmake"
+  "CMakeFiles/red_triangle.dir/DependInfo.cmake"
+  "CMakeFiles/blue_square.dir/DependInfo.cmake"
+  "CMakeFiles/polygons_part1.dir/DependInfo.cmake"
+  "CMakeFiles/polygons_part2.dir/DependInfo.cmake"
   "_deps/glfw-build/CMakeFiles/uninstall.dir/DependInfo.cmake"
   "_deps/glfw-build/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   "_deps/glfw-build/src/CMakeFiles/update_mappings.dir/DependInfo.cmake"

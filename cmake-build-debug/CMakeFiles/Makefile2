@@ -62,13 +62,19 @@ CMAKE_BINARY_DIR = C:\Users\vladk\CLionProjects\untitled\cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/ComputerGraphicsProject.dir/all
+all: CMakeFiles/red_triangle.dir/all
+all: CMakeFiles/blue_square.dir/all
+all: CMakeFiles/polygons_part1.dir/all
+all: CMakeFiles/polygons_part2.dir/all
 all: _deps/glfw-build/all
 all: _deps/glm-build/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/ComputerGraphicsProject.dir/codegen
+codegen: CMakeFiles/red_triangle.dir/codegen
+codegen: CMakeFiles/blue_square.dir/codegen
+codegen: CMakeFiles/polygons_part1.dir/codegen
+codegen: CMakeFiles/polygons_part2.dir/codegen
 codegen: _deps/glfw-build/codegen
 codegen: _deps/glm-build/codegen
 .PHONY : codegen
@@ -79,7 +85,10 @@ preinstall: _deps/glm-build/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/ComputerGraphicsProject.dir/clean
+clean: CMakeFiles/red_triangle.dir/clean
+clean: CMakeFiles/blue_square.dir/clean
+clean: CMakeFiles/polygons_part1.dir/clean
+clean: CMakeFiles/polygons_part2.dir/clean
 clean: _deps/glfw-build/clean
 clean: _deps/glm-build/clean
 .PHONY : clean
@@ -186,37 +195,136 @@ _deps/glm-build/glm/clean: _deps/glm-build/glm/CMakeFiles/glm.dir/clean
 .PHONY : _deps/glm-build/glm/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/ComputerGraphicsProject.dir
+# Target rules for target CMakeFiles/red_triangle.dir
 
 # All Build rule for target.
-CMakeFiles/ComputerGraphicsProject.dir/all: _deps/glfw-build/src/CMakeFiles/glfw.dir/all
-CMakeFiles/ComputerGraphicsProject.dir/all: _deps/glm-build/glm/CMakeFiles/glm.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComputerGraphicsProject.dir\build.make CMakeFiles/ComputerGraphicsProject.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComputerGraphicsProject.dir\build.make CMakeFiles/ComputerGraphicsProject.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\vladk\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target ComputerGraphicsProject"
-.PHONY : CMakeFiles/ComputerGraphicsProject.dir/all
+CMakeFiles/red_triangle.dir/all: _deps/glfw-build/src/CMakeFiles/glfw.dir/all
+CMakeFiles/red_triangle.dir/all: _deps/glm-build/glm/CMakeFiles/glm.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\vladk\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=46,47,48,49,50,51,52 "Built target red_triangle"
+.PHONY : CMakeFiles/red_triangle.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/ComputerGraphicsProject.dir/rule: cmake_check_build_system
+CMakeFiles/red_triangle.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vladk\CLionProjects\untitled\cmake-build-debug\CMakeFiles 31
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/ComputerGraphicsProject.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/red_triangle.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vladk\CLionProjects\untitled\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/ComputerGraphicsProject.dir/rule
+.PHONY : CMakeFiles/red_triangle.dir/rule
 
 # Convenience name for target.
-ComputerGraphicsProject: CMakeFiles/ComputerGraphicsProject.dir/rule
-.PHONY : ComputerGraphicsProject
+red_triangle: CMakeFiles/red_triangle.dir/rule
+.PHONY : red_triangle
 
 # codegen rule for target.
-CMakeFiles/ComputerGraphicsProject.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComputerGraphicsProject.dir\build.make CMakeFiles/ComputerGraphicsProject.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\vladk\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7 "Finished codegen for target ComputerGraphicsProject"
-.PHONY : CMakeFiles/ComputerGraphicsProject.dir/codegen
+CMakeFiles/red_triangle.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\vladk\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=46,47,48,49,50,51,52 "Finished codegen for target red_triangle"
+.PHONY : CMakeFiles/red_triangle.dir/codegen
 
 # clean rule for target.
-CMakeFiles/ComputerGraphicsProject.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ComputerGraphicsProject.dir\build.make CMakeFiles/ComputerGraphicsProject.dir/clean
-.PHONY : CMakeFiles/ComputerGraphicsProject.dir/clean
+CMakeFiles/red_triangle.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/clean
+.PHONY : CMakeFiles/red_triangle.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/blue_square.dir
+
+# All Build rule for target.
+CMakeFiles/blue_square.dir/all: _deps/glfw-build/src/CMakeFiles/glfw.dir/all
+CMakeFiles/blue_square.dir/all: _deps/glm-build/glm/CMakeFiles/glm.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\vladk\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target blue_square"
+.PHONY : CMakeFiles/blue_square.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/blue_square.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vladk\CLionProjects\untitled\cmake-build-debug\CMakeFiles 31
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/blue_square.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vladk\CLionProjects\untitled\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/blue_square.dir/rule
+
+# Convenience name for target.
+blue_square: CMakeFiles/blue_square.dir/rule
+.PHONY : blue_square
+
+# codegen rule for target.
+CMakeFiles/blue_square.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\vladk\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7 "Finished codegen for target blue_square"
+.PHONY : CMakeFiles/blue_square.dir/codegen
+
+# clean rule for target.
+CMakeFiles/blue_square.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/clean
+.PHONY : CMakeFiles/blue_square.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/polygons_part1.dir
+
+# All Build rule for target.
+CMakeFiles/polygons_part1.dir/all: _deps/glfw-build/src/CMakeFiles/glfw.dir/all
+CMakeFiles/polygons_part1.dir/all: _deps/glm-build/glm/CMakeFiles/glm.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\vladk\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=32,33,34,35,36,37,38 "Built target polygons_part1"
+.PHONY : CMakeFiles/polygons_part1.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/polygons_part1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vladk\CLionProjects\untitled\cmake-build-debug\CMakeFiles 31
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/polygons_part1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vladk\CLionProjects\untitled\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/polygons_part1.dir/rule
+
+# Convenience name for target.
+polygons_part1: CMakeFiles/polygons_part1.dir/rule
+.PHONY : polygons_part1
+
+# codegen rule for target.
+CMakeFiles/polygons_part1.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\vladk\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=32,33,34,35,36,37,38 "Finished codegen for target polygons_part1"
+.PHONY : CMakeFiles/polygons_part1.dir/codegen
+
+# clean rule for target.
+CMakeFiles/polygons_part1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/clean
+.PHONY : CMakeFiles/polygons_part1.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/polygons_part2.dir
+
+# All Build rule for target.
+CMakeFiles/polygons_part2.dir/all: _deps/glfw-build/src/CMakeFiles/glfw.dir/all
+CMakeFiles/polygons_part2.dir/all: _deps/glm-build/glm/CMakeFiles/glm.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\vladk\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=39,40,41,42,43,44,45 "Built target polygons_part2"
+.PHONY : CMakeFiles/polygons_part2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/polygons_part2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vladk\CLionProjects\untitled\cmake-build-debug\CMakeFiles 31
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/polygons_part2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\vladk\CLionProjects\untitled\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/polygons_part2.dir/rule
+
+# Convenience name for target.
+polygons_part2: CMakeFiles/polygons_part2.dir/rule
+.PHONY : polygons_part2
+
+# codegen rule for target.
+CMakeFiles/polygons_part2.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\vladk\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=39,40,41,42,43,44,45 "Finished codegen for target polygons_part2"
+.PHONY : CMakeFiles/polygons_part2.dir/codegen
+
+# clean rule for target.
+CMakeFiles/polygons_part2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/clean
+.PHONY : CMakeFiles/polygons_part2.dir/clean
 
 #=============================================================================
 # Target rules for target _deps/glfw-build/CMakeFiles/uninstall.dir
@@ -289,7 +397,7 @@ _deps/glfw-build/src/CMakeFiles/glfw.dir/clean:
 _deps/glfw-build/src/CMakeFiles/update_mappings.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps\glfw-build\src\CMakeFiles\update_mappings.dir\build.make _deps/glfw-build/src/CMakeFiles/update_mappings.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps\glfw-build\src\CMakeFiles\update_mappings.dir\build.make _deps/glfw-build/src/CMakeFiles/update_mappings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\vladk\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=32 "Built target update_mappings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\vladk\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=53 "Built target update_mappings"
 .PHONY : _deps/glfw-build/src/CMakeFiles/update_mappings.dir/all
 
 # Build rule for subdir invocation for target.
@@ -306,7 +414,7 @@ update_mappings: _deps/glfw-build/src/CMakeFiles/update_mappings.dir/rule
 # codegen rule for target.
 _deps/glfw-build/src/CMakeFiles/update_mappings.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps\glfw-build\src\CMakeFiles\update_mappings.dir\build.make _deps/glfw-build/src/CMakeFiles/update_mappings.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\vladk\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=32 "Finished codegen for target update_mappings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\vladk\CLionProjects\untitled\cmake-build-debug\CMakeFiles --progress-num=53 "Finished codegen for target update_mappings"
 .PHONY : _deps/glfw-build/src/CMakeFiles/update_mappings.dir/codegen
 
 # clean rule for target.

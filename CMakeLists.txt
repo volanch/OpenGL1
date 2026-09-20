@@ -1,19 +1,18 @@
 cmake_minimum_required(VERSION 3.25)
-project(ComputerGraphicsProject C CXX)
+project(ComputerGraphicsAssignment1 C CXX)
 
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Автоматически скачиваем GLFW и GLM через FetchContent
 include(FetchContent)
 
-# 1. Скачиваем GLFW
 FetchContent_Declare(
         glfw
         URL https://github.com/glfw/glfw/releases/download/3.4/glfw-3.4.zip
 )
+
 FetchContent_MakeAvailable(glfw)
 
-# 2. Скачиваем GLM через Git-репозиторий
 FetchContent_Declare(
         glm
         GIT_REPOSITORY https://github.com/g-truc/glm.git
@@ -21,11 +20,8 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(glm)
 
-# Создаем исполняемый файл и добавляем GLAD (glad.c)
-add_executable(ComputerGraphicsProject
-        #red_triangle.cpp
+set(COMMON_SOURCES
         src/glad.c
-        #blue_square.cpp
         Header/shaderClass.h
         "Source Files/shaderClass.cpp"
         Header/VBO.h
@@ -35,19 +31,24 @@ add_executable(ComputerGraphicsProject
         Header/VAO.h
         "Source Files/VAO.cpp"
         Header/shapeGen.h
-        #polygons_part1.cpp
-        polygons_part2.cpp
 )
 
-# Подключаем пути к заголовочным файлам (включая GLAD)
-target_include_directories(ComputerGraphicsProject PRIVATE include)
+function(add_task_executable NAME SOURCE_FILE)
+    add_executable(${NAME} ${SOURCE_FILE} ${COMMON_SOURCES})
+    target_include_directories(${NAME} PRIVATE include Header)
+    target_link_libraries(${NAME} PRIVATE glfw glm)
+endfunction()
 
-# Линкуем библиотеки
-target_link_libraries(ComputerGraphicsProject PRIVATE glfw glm)
+add_task_executable(red_triangle red_triangle.cpp)
 
-target_include_directories(ComputerGraphicsProject PRIVATE Header include)
+add_task_executable(blue_square blue_square.cpp)
 
-file(GLOB SHADER_FILES "${CMAKE_SOURCE_DIR}/Resource Files/Shaders/*.vert"
+add_task_executable(polygons_part1 polygons_part1.cpp)
+
+add_task_executable(polygons_part2 polygons_part2.cpp)
+
+# Copy the GLSL shader files next to every built executable
+file(GLOB SHADER_FILES
+        "${CMAKE_SOURCE_DIR}/Resource Files/Shaders/*.vert"
         "${CMAKE_SOURCE_DIR}/Resource Files/Shaders/*.frag")
 file(COPY ${SHADER_FILES} DESTINATION ${CMAKE_BINARY_DIR})
-
