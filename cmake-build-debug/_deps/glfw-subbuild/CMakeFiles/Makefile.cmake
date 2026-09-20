@@ -10,10 +10,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/4.3.1/CMakeSystem.cmake"
   "CMakeLists.txt"
   "glfw-populate-prefix/tmp/glfw-populate-mkdirs.cmake"
-  "D:/CLion 2026.2.2/bin/cmake/win/x64/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake"
   "D:/CLion 2026.2.2/bin/cmake/win/x64/share/cmake-4.3/Modules/CMakeGenericSystem.cmake"
   "D:/CLion 2026.2.2/bin/cmake/win/x64/share/cmake-4.3/Modules/CMakeInitializeConfigs.cmake"
-  "D:/CLion 2026.2.2/bin/cmake/win/x64/share/cmake-4.3/Modules/CMakeSystem.cmake.in"
   "D:/CLion 2026.2.2/bin/cmake/win/x64/share/cmake-4.3/Modules/CMakeSystemSpecificInformation.cmake"
   "D:/CLion 2026.2.2/bin/cmake/win/x64/share/cmake-4.3/Modules/CMakeSystemSpecificInitialize.cmake"
   "D:/CLion 2026.2.2/bin/cmake/win/x64/share/cmake-4.3/Modules/ExternalProject.cmake"
@@ -38,7 +36,6 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "CMakeFiles/4.3.1/CMakeSystem.cmake"
   "glfw-populate-prefix/tmp/glfw-populate-mkdirs.cmake"
   "glfw-populate-prefix/src/glfw-populate-stamp/download-glfw-populate.cmake"
   "glfw-populate-prefix/src/glfw-populate-stamp/verify-glfw-populate.cmake"

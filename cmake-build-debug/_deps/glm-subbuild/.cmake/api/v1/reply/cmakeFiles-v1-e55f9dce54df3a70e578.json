@@ -5,16 +5,6 @@
 			"path" : "CMakeLists.txt"
 		},
 		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "D:/CLion 2026.2.2/bin/cmake/win/x64/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "D:/CLion 2026.2.2/bin/cmake/win/x64/share/cmake-4.3/Modules/CMakeSystem.cmake.in"
-		},
-		{
 			"path" : "CMakeFiles/4.3.1/CMakeSystem.cmake"
 		},
 		{
