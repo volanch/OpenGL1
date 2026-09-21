@@ -103,13 +103,13 @@ int main()
 
     // every shape into one interleaved VBO
     std::vector<Vertex> all;
-    int skyStart      = 0;                 all.insert(all.end(), sky.begin(), sky.end());
-    int sunMoonStart   = (int)all.size();   all.insert(all.end(), sunMoon.begin(), sunMoon.end());
-    int mBackStart     = (int)all.size();   all.insert(all.end(), mountainBack.begin(), mountainBack.end());
-    int mFrontStart    = (int)all.size();   all.insert(all.end(), mountainFront.begin(), mountainFront.end());
-    int starStart       = (int)all.size();  all.insert(all.end(), eveningStar.begin(), eveningStar.end());
-    int starFieldStart = (int)all.size();   all.insert(all.end(), starField.begin(), starField.end());
-    int birdsStart      = (int)all.size();  all.insert(all.end(), birds.begin(), birds.end());
+    int skyStart = 0; all.insert(all.end(), sky.begin(), sky.end());
+    int sunMoonStart = (int)all.size(); all.insert(all.end(), sunMoon.begin(), sunMoon.end());
+    int mBackStart = (int)all.size(); all.insert(all.end(), mountainBack.begin(), mountainBack.end());
+    int mFrontStart = (int)all.size(); all.insert(all.end(), mountainFront.begin(), mountainFront.end());
+    int starStart = (int)all.size(); all.insert(all.end(), eveningStar.begin(), eveningStar.end());
+    int starFieldStart = (int)all.size(); all.insert(all.end(), starField.begin(), starField.end());
+    int birdsStart = (int)all.size(); all.insert(all.end(), birds.begin(), birds.end());
 
     VAO VAO1;
     VAO1.Bind();
@@ -124,8 +124,8 @@ int main()
     // uniform locations
     shaderProgram.Activate();
     GLint offsetLoc = glGetUniformLocation(shaderProgram.ID, "uOffset");
-    GLint mixLoc    = glGetUniformLocation(shaderProgram.ID, "uNightMix");
-    GLint tintLoc   = glGetUniformLocation(shaderProgram.ID, "uNightTint");
+    GLint mixLoc = glGetUniformLocation(shaderProgram.ID, "uNightMix");
+    GLint tintLoc = glGetUniformLocation(shaderProgram.ID, "uNightTint");
 
     float nightMix = 0.0f; // 0 - day, 1 - night
     double lastTime = glfwGetTime();

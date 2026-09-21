@@ -48,13 +48,6 @@ Close a window to exit.
 
 If you are in Clion just select executable and run it.
 
-All shapes are generated procedurally with parametric equations
-(`x = cx + r·cos(θ), y = cy + r·sin(θ)`) in `Header/shapeGen.h`, packed into
-a single interleaved vertex buffer per program (there {x, y, r, g, b} per vertex),
-and drawn with one `glDrawArrays/glDrawElements` call per shape. Per-vertex
-color is passed to `Resource Files/Shaders/default.vert`/`Resource Files/Shaders/default.frag` (or `solid.vert`/`solid.frag`
-for the solid figures).
-
 ## Requirements
 
 - CMake ≥ 3.25
