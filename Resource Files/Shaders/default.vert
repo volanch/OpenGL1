@@ -3,8 +3,11 @@ layout (location = 0) in vec2 vPosition;
 layout (location = 1) in vec3 vColor;
 
 out vec3 fColor;
+
+uniform vec2 uOffset;
+
 void main()
 {
-	gl_Position = vec4(vPosition, 0.0, 1.0);
+	gl_Position = vec4(vPosition + uOffset, 0.0, 1.0);
 	fColor = vColor;
 }

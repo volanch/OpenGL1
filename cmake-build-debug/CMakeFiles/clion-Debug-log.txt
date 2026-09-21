@@ -22,6 +22,6 @@ CMake Deprecation Warning at cmake-build-debug/_deps/glm-src/CMakeLists.txt:2 (c
 
 -- GLM: Version 1.0.1
 -- GLM: Build with C++ features auto detection
--- Configuring done (1.8s)
--- Generating done (0.3s)
+-- Configuring done (4.5s)
+-- Generating done (0.8s)
 -- Build files have been written to: C:/Users/vladk/CLionProjects/untitled/cmake-build-debug

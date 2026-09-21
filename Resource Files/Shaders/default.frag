@@ -2,7 +2,13 @@
 
 in vec3 fColor;
 out vec4 FragColor;
+
+uniform float uNightMix;
+uniform vec3 uNightTint;
+
 void main()
 {
-	FragColor = vec4(fColor, 1.0f);
+	vec3 nightColor = fColor * uNightTint;
+	vec3 finalColor = mix(fColor, nightColor, uNightMix);
+	FragColor = vec4(finalColor, 1.0f);
 }

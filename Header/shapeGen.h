@@ -7,6 +7,7 @@
 #include<vector>
 #include<cmath>
 #include<functional>
+#include<random>
 
 struct Vertex {
     float x, y;
@@ -104,6 +105,42 @@ inline std::vector<Vertex> MakeStarFan(
         verts.push_back({x, y, r, g, b});
     }
     return verts;
+}
+
+// just points to imitate stars GL_POINTS. Position is randomised
+// with a fixed seed so the layout is reproducible between runs
+inline std::vector<Vertex> MakeStarField(
+    int count, unsigned seed,
+    float minX, float maxX, float minY, float maxY,
+    float r, float g, float b)
+{
+    std::vector<Vertex> verts;
+    verts.reserve(count);
+    std::mt19937 rng(seed);
+    std::uniform_real_distribution<float> distX(minX, maxX);
+    std::uniform_real_distribution<float> distY(minY, maxY);
+    std::uniform_real_distribution<float> distBright(0.65f, 1.0f);
+
+    for (int i = 0; i < count; i++)
+    {
+        float k = distBright(rng);
+        verts.push_back({distX(rng), distY(rng), r * k, g * k, b * k});
+    }
+    return verts;
+}
+
+inline std::vector<Vertex> MakeBird(
+    float cx, float cy, float wingSpan,
+    float r, float g, float b)
+{
+    float halfSpan = wingSpan * 0.5f;
+    float liftY = wingSpan * 0.35f;
+    return {
+        {cx - halfSpan, cy, r, g, b},
+        {cx, cy + liftY, r, g, b},
+        {cx, cy + liftY, r, g, b},
+        {cx + halfSpan, cy, r, g, b},
+    };
 }
 
 #endif //COMPUTERGRAPHICSPROJECT_SHAPEGEN_H

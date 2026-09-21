@@ -22,6 +22,7 @@ FetchContent_MakeAvailable(glm)
 
 set(COMMON_SOURCES
         src/glad.c
+        digital_postcard.cpp
         Header/shaderClass.h
         "Source Files/shaderClass.cpp"
         Header/VBO.h
@@ -39,13 +40,7 @@ function(add_task_executable NAME SOURCE_FILE)
     target_link_libraries(${NAME} PRIVATE glfw glm)
 endfunction()
 
-add_task_executable(red_triangle red_triangle.cpp)
-
-add_task_executable(blue_square blue_square.cpp)
-
-add_task_executable(polygons_part1 polygons_part1.cpp)
-
-add_task_executable(polygons_part2 polygons_part2.cpp)
+add_task_executable(digital_postcard digital_postcard.cpp)
 
 # Copy the GLSL shader files next to every built executable
 file(GLOB SHADER_FILES
