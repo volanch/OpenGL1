@@ -1,4 +1,4 @@
-C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/digital_postcard.dir
+C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/robot_controller.dir
 C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/list_install_components.dir

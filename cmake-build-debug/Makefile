@@ -161,17 +161,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named digital_postcard
+# Target rules for targets named robot_controller
 
 # Build rule for target.
-digital_postcard: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 digital_postcard
-.PHONY : digital_postcard
+robot_controller: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 robot_controller
+.PHONY : robot_controller
 
 # fast build rule for target.
-digital_postcard/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_postcard.dir\build.make CMakeFiles/digital_postcard.dir/build
-.PHONY : digital_postcard/fast
+robot_controller/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/build
+.PHONY : robot_controller/fast
 
 #=============================================================================
 # Target rules for targets named uninstall
@@ -230,7 +230,7 @@ Source_Files/EBO.obj: Source_Files/EBO.cpp.obj
 
 # target to build an object file
 Source_Files/EBO.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_postcard.dir\build.make CMakeFiles/digital_postcard.dir/Source_Files/EBO.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/Source_Files/EBO.cpp.obj
 .PHONY : Source_Files/EBO.cpp.obj
 
 Source_Files/EBO.i: Source_Files/EBO.cpp.i
@@ -238,7 +238,7 @@ Source_Files/EBO.i: Source_Files/EBO.cpp.i
 
 # target to preprocess a source file
 Source_Files/EBO.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_postcard.dir\build.make CMakeFiles/digital_postcard.dir/Source_Files/EBO.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/Source_Files/EBO.cpp.i
 .PHONY : Source_Files/EBO.cpp.i
 
 Source_Files/EBO.s: Source_Files/EBO.cpp.s
@@ -246,7 +246,7 @@ Source_Files/EBO.s: Source_Files/EBO.cpp.s
 
 # target to generate assembly for a file
 Source_Files/EBO.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_postcard.dir\build.make CMakeFiles/digital_postcard.dir/Source_Files/EBO.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/Source_Files/EBO.cpp.s
 .PHONY : Source_Files/EBO.cpp.s
 
 Source_Files/VAO.obj: Source_Files/VAO.cpp.obj
@@ -254,7 +254,7 @@ Source_Files/VAO.obj: Source_Files/VAO.cpp.obj
 
 # target to build an object file
 Source_Files/VAO.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_postcard.dir\build.make CMakeFiles/digital_postcard.dir/Source_Files/VAO.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/Source_Files/VAO.cpp.obj
 .PHONY : Source_Files/VAO.cpp.obj
 
 Source_Files/VAO.i: Source_Files/VAO.cpp.i
@@ -262,7 +262,7 @@ Source_Files/VAO.i: Source_Files/VAO.cpp.i
 
 # target to preprocess a source file
 Source_Files/VAO.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_postcard.dir\build.make CMakeFiles/digital_postcard.dir/Source_Files/VAO.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/Source_Files/VAO.cpp.i
 .PHONY : Source_Files/VAO.cpp.i
 
 Source_Files/VAO.s: Source_Files/VAO.cpp.s
@@ -270,7 +270,7 @@ Source_Files/VAO.s: Source_Files/VAO.cpp.s
 
 # target to generate assembly for a file
 Source_Files/VAO.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_postcard.dir\build.make CMakeFiles/digital_postcard.dir/Source_Files/VAO.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/Source_Files/VAO.cpp.s
 .PHONY : Source_Files/VAO.cpp.s
 
 Source_Files/VBO.obj: Source_Files/VBO.cpp.obj
@@ -278,7 +278,7 @@ Source_Files/VBO.obj: Source_Files/VBO.cpp.obj
 
 # target to build an object file
 Source_Files/VBO.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_postcard.dir\build.make CMakeFiles/digital_postcard.dir/Source_Files/VBO.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/Source_Files/VBO.cpp.obj
 .PHONY : Source_Files/VBO.cpp.obj
 
 Source_Files/VBO.i: Source_Files/VBO.cpp.i
@@ -286,7 +286,7 @@ Source_Files/VBO.i: Source_Files/VBO.cpp.i
 
 # target to preprocess a source file
 Source_Files/VBO.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_postcard.dir\build.make CMakeFiles/digital_postcard.dir/Source_Files/VBO.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/Source_Files/VBO.cpp.i
 .PHONY : Source_Files/VBO.cpp.i
 
 Source_Files/VBO.s: Source_Files/VBO.cpp.s
@@ -294,7 +294,7 @@ Source_Files/VBO.s: Source_Files/VBO.cpp.s
 
 # target to generate assembly for a file
 Source_Files/VBO.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_postcard.dir\build.make CMakeFiles/digital_postcard.dir/Source_Files/VBO.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/Source_Files/VBO.cpp.s
 .PHONY : Source_Files/VBO.cpp.s
 
 Source_Files/shaderClass.obj: Source_Files/shaderClass.cpp.obj
@@ -302,7 +302,7 @@ Source_Files/shaderClass.obj: Source_Files/shaderClass.cpp.obj
 
 # target to build an object file
 Source_Files/shaderClass.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_postcard.dir\build.make CMakeFiles/digital_postcard.dir/Source_Files/shaderClass.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/Source_Files/shaderClass.cpp.obj
 .PHONY : Source_Files/shaderClass.cpp.obj
 
 Source_Files/shaderClass.i: Source_Files/shaderClass.cpp.i
@@ -310,7 +310,7 @@ Source_Files/shaderClass.i: Source_Files/shaderClass.cpp.i
 
 # target to preprocess a source file
 Source_Files/shaderClass.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_postcard.dir\build.make CMakeFiles/digital_postcard.dir/Source_Files/shaderClass.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/Source_Files/shaderClass.cpp.i
 .PHONY : Source_Files/shaderClass.cpp.i
 
 Source_Files/shaderClass.s: Source_Files/shaderClass.cpp.s
@@ -318,39 +318,39 @@ Source_Files/shaderClass.s: Source_Files/shaderClass.cpp.s
 
 # target to generate assembly for a file
 Source_Files/shaderClass.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_postcard.dir\build.make CMakeFiles/digital_postcard.dir/Source_Files/shaderClass.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/Source_Files/shaderClass.cpp.s
 .PHONY : Source_Files/shaderClass.cpp.s
 
-digital_postcard.obj: digital_postcard.cpp.obj
-.PHONY : digital_postcard.obj
+robot_controller.obj: robot_controller.cpp.obj
+.PHONY : robot_controller.obj
 
 # target to build an object file
-digital_postcard.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_postcard.dir\build.make CMakeFiles/digital_postcard.dir/digital_postcard.cpp.obj
-.PHONY : digital_postcard.cpp.obj
+robot_controller.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/robot_controller.cpp.obj
+.PHONY : robot_controller.cpp.obj
 
-digital_postcard.i: digital_postcard.cpp.i
-.PHONY : digital_postcard.i
+robot_controller.i: robot_controller.cpp.i
+.PHONY : robot_controller.i
 
 # target to preprocess a source file
-digital_postcard.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_postcard.dir\build.make CMakeFiles/digital_postcard.dir/digital_postcard.cpp.i
-.PHONY : digital_postcard.cpp.i
+robot_controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/robot_controller.cpp.i
+.PHONY : robot_controller.cpp.i
 
-digital_postcard.s: digital_postcard.cpp.s
-.PHONY : digital_postcard.s
+robot_controller.s: robot_controller.cpp.s
+.PHONY : robot_controller.s
 
 # target to generate assembly for a file
-digital_postcard.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_postcard.dir\build.make CMakeFiles/digital_postcard.dir/digital_postcard.cpp.s
-.PHONY : digital_postcard.cpp.s
+robot_controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/robot_controller.cpp.s
+.PHONY : robot_controller.cpp.s
 
 src/glad.obj: src/glad.c.obj
 .PHONY : src/glad.obj
 
 # target to build an object file
 src/glad.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_postcard.dir\build.make CMakeFiles/digital_postcard.dir/src/glad.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/src/glad.c.obj
 .PHONY : src/glad.c.obj
 
 src/glad.i: src/glad.c.i
@@ -358,7 +358,7 @@ src/glad.i: src/glad.c.i
 
 # target to preprocess a source file
 src/glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_postcard.dir\build.make CMakeFiles/digital_postcard.dir/src/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/src/glad.c.i
 .PHONY : src/glad.c.i
 
 src/glad.s: src/glad.c.s
@@ -366,7 +366,7 @@ src/glad.s: src/glad.c.s
 
 # target to generate assembly for a file
 src/glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\digital_postcard.dir\build.make CMakeFiles/digital_postcard.dir/src/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/src/glad.c.s
 .PHONY : src/glad.c.s
 
 # Help Target
@@ -383,9 +383,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... uninstall
 	@echo ... update_mappings
-	@echo ... digital_postcard
 	@echo ... glfw
 	@echo ... glm
+	@echo ... robot_controller
 	@echo ... Source_Files/EBO.obj
 	@echo ... Source_Files/EBO.i
 	@echo ... Source_Files/EBO.s
@@ -398,9 +398,9 @@ help:
 	@echo ... Source_Files/shaderClass.obj
 	@echo ... Source_Files/shaderClass.i
 	@echo ... Source_Files/shaderClass.s
-	@echo ... digital_postcard.obj
-	@echo ... digital_postcard.i
-	@echo ... digital_postcard.s
+	@echo ... robot_controller.obj
+	@echo ... robot_controller.i
+	@echo ... robot_controller.s
 	@echo ... src/glad.obj
 	@echo ... src/glad.i
 	@echo ... src/glad.s

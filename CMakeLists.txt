@@ -22,7 +22,7 @@ FetchContent_MakeAvailable(glm)
 
 set(COMMON_SOURCES
         src/glad.c
-        digital_postcard.cpp
+        robot_controller.cpp
         Header/shaderClass.h
         "Source Files/shaderClass.cpp"
         Header/VBO.h
@@ -40,7 +40,7 @@ function(add_task_executable NAME SOURCE_FILE)
     target_link_libraries(${NAME} PRIVATE glfw glm)
 endfunction()
 
-add_task_executable(digital_postcard digital_postcard.cpp)
+add_task_executable(robot_controller robot_controller.cpp)
 
 # Copy the GLSL shader files next to every built executable
 file(GLOB SHADER_FILES
