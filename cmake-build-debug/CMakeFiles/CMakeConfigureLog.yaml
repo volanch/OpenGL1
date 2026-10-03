@@ -6483,3 +6483,1472 @@ events:
         - "D:/CLion 2026.2.2/bin/cmake/win/x64"
         - "C:/Program Files (x86)/ComputerGraphicsProject"
 ...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineSystem.cmake:218 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:501 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:538 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\vladk\\AppData\\Local\\Temp\\_MEI0000310c2\\pywin32_system32"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.18.8-hotspot\\bin"
+        - "C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\Python314\\Scripts\\"
+        - "C:\\Python314\\"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\ProgramData\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Incredibuild"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\Azure Data Studio\\bin"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\vladk\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\vladk\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\vladk\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\vladk\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\vladk\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "D:\\IntelliJ IDEA 2024.3.1\\bin"
+        - "D:\\PyCharm 2024.3\\bin"
+        - "C:\\Users\\vladk\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Program Files\\Graphviz\\bin"
+        - "C:\\Users\\vladk\\.dotnet\\tools"
+        - "C:\\Users\\vladk\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "D:\\JetBrains Rider 2025.3.0.3\\bin"
+        - "D:\\JetBrains\\WebStorm 2025.3\\bin"
+        - "C:\\Users\\vladk\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\Azure Data Studio\\bin"
+        - "D:\\JetBrains\\PyCharm 2025.3.1\\bin"
+        - "D:\\JetBrains\\GoLand 2025.3.1\\bin"
+        - "D:\\flutter\\bin"
+        - "D:\\Android\\cmdline-tools\\latest\\bin"
+        - "D:\\Android\\platform-tools"
+        - "D:\\Android\\emulator"
+        - "C:\\Users\\vladk\\AppData\\Roaming\\Python\\Python314\\Scripts"
+        - "D:\\JetBrains\\DataGrip 2026.1.2\\bin"
+        - "D:\\JetBrains\\IntelliJ IDEA 2026.1.3\\bin"
+        - "D:\\CLion 2026.2.2\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ComputerGraphicsProject"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: D:/CLion 2026.2.2/bin/mingw/bin/gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+      
+      The C compiler identification is GNU, found in:
+        C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/4.4.3/CompilerIdC/a.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:501 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:538 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Users\\vladk\\AppData\\Local\\Temp\\_MEI0000310c2\\pywin32_system32"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.18.8-hotspot\\bin"
+        - "C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\Python314\\Scripts\\"
+        - "C:\\Python314\\"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\ProgramData\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\System32\\HWAudioDriver"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\Program Files (x86)\\Incredibuild"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files\\Azure Data Studio\\bin"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\vladk\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\vladk\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\vladk\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\vladk\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\vladk\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "D:\\IntelliJ IDEA 2024.3.1\\bin"
+        - "D:\\PyCharm 2024.3\\bin"
+        - "C:\\Users\\vladk\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Program Files\\Graphviz\\bin"
+        - "C:\\Users\\vladk\\.dotnet\\tools"
+        - "C:\\Users\\vladk\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "D:\\JetBrains Rider 2025.3.0.3\\bin"
+        - "D:\\JetBrains\\WebStorm 2025.3\\bin"
+        - "C:\\Users\\vladk\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\Azure Data Studio\\bin"
+        - "D:\\JetBrains\\PyCharm 2025.3.1\\bin"
+        - "D:\\JetBrains\\GoLand 2025.3.1\\bin"
+        - "D:\\flutter\\bin"
+        - "D:\\Android\\cmdline-tools\\latest\\bin"
+        - "D:\\Android\\platform-tools"
+        - "D:\\Android\\emulator"
+        - "C:\\Users\\vladk\\AppData\\Roaming\\Python\\Python314\\Scripts"
+        - "D:\\JetBrains\\DataGrip 2026.1.2\\bin"
+        - "D:\\JetBrains\\IntelliJ IDEA 2026.1.3\\bin"
+        - "D:\\CLion 2026.2.2\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/ComputerGraphicsProject"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: D:/CLion 2026.2.2/bin/mingw/bin/c++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      
+      The CXX compiler identification is GNU, found in:
+        C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/4.4.3/CompilerIdCXX/a.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-u7ouso"
+      binary: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-u7ouso"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: false
+      stdout: |
+        Change Dir: 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-u7ouso'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_f56ec/fast
+        D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_f56ec.dir\\build.make CMakeFiles/cmTC_f56ec.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-u7ouso'
+        Building C object CMakeFiles/cmTC_f56ec.dir/CMakeCCompilerABI.c.obj
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"   -v -o CMakeFiles\\cmTC_f56ec.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c"
+        Using built-in specs.
+        COLLECT_GCC=D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-15.2.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-pc-linux-gnu --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win --with-mpfr=/win --with-mpc=/win
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 15.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_f56ec.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_f56ec.dir\\'
+         D:/CLion 2026.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_f56ec.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\vladk\\AppData\\Local\\Temp\\ccFcTjMa.s
+        GNU C23 (GCC) version 15.2.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "D:/CLion 2026.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/include"
+        ignoring nonexistent directory "/win/include"
+        ignoring duplicate directory "D:/CLion 2026.2.2/bin/mingw/lib/gcc/../../include"
+        ignoring duplicate directory "D:/CLion 2026.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed"
+        ignoring duplicate directory "D:/CLion 2026.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include"
+        ignoring nonexistent directory "/mingw/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include
+         D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include
+         D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed
+         D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include
+        End of search list.
+        Compiler executable checksum: 8d345432f9763c84c875202b30822017
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_f56ec.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_f56ec.dir\\'
+         D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_f56ec.dir\\CMakeCCompilerABI.c.obj C:\\Users\\vladk\\AppData\\Local\\Temp\\ccFcTjMa.s
+        GNU assembler version 2.46 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.46
+        COMPILER_PATH=D:/CLion 2026.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/;D:/CLion 2026.2.2/bin/mingw/bin/../libexec/gcc/;D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/;D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_f56ec.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_f56ec.dir\\CMakeCCompilerABI.c.'
+        Linking C executable cmTC_f56ec.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_f56ec.dir\\link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe
+        COLLECT_LTO_WRAPPER=D:/CLion\\ 2026.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-15.2.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-pc-linux-gnu --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win --with-mpfr=/win --with-mpc=/win
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 15.2.0 (GCC) 
+        COMPILER_PATH=D:/CLion 2026.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/;D:/CLion 2026.2.2/bin/mingw/bin/../libexec/gcc/;D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/;D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f56ec.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_f56ec.'
+         D:/CLion 2026.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -m i386pep -Bdynamic -o cmTC_f56ec.exe D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_f56ec.dir/objects.a --no-whole-archive --out-implib libcmTC_f56ec.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        collect2 version 15.2.0
+        D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -m i386pep -Bdynamic -o cmTC_f56ec.exe D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_f56ec.dir/objects.a --no-whole-archive --out-implib libcmTC_f56ec.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        GNU ld (GNU Binutils) 2.46
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f56ec.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_f56ec.'
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_f56ec.dir/objects.a
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_f56ec.dir/objects.a @CMakeFiles\\cmTC_f56ec.dir\\objects1.rsp
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_f56ec.dir/objects.a -Wl,--no-whole-archive -o cmTC_f56ec.exe -Wl,--out-implib,libcmTC_f56ec.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make[1]: Leaving directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-u7ouso'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:255 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include]
+          add: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include]
+          add: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
+          add: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include]
+        end of search list found
+        collapse include dir [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include] ==> [D:/CLion 2026.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/15.2.0/include]
+        collapse include dir [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include] ==> [D:/CLion 2026.2.2/bin/mingw/include]
+        collapse include dir [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed] ==> [D:/CLion 2026.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
+        collapse include dir [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include] ==> [D:/CLion 2026.2.2/bin/mingw/x86_64-w64-mingw32/include]
+        implicit include dirs: [D:/CLion 2026.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/15.2.0/include;D:/CLion 2026.2.2/bin/mingw/include;D:/CLion 2026.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed;D:/CLion 2026.2.2/bin/mingw/x86_64-w64-mingw32/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
+        ignore line: [Change Dir: 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-u7ouso']
+        ignore line: []
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_f56ec/fast]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_f56ec.dir\\build.make CMakeFiles/cmTC_f56ec.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-u7ouso']
+        ignore line: [Building C object CMakeFiles/cmTC_f56ec.dir/CMakeCCompilerABI.c.obj]
+        ignore line: ["D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"   -v -o CMakeFiles\\cmTC_f56ec.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-15.2.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-pc-linux-gnu --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win --with-mpfr=/win --with-mpc=/win]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 15.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_f56ec.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_f56ec.dir\\']
+        ignore line: [ D:/CLion 2026.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_f56ec.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\vladk\\AppData\\Local\\Temp\\ccFcTjMa.s]
+        ignore line: [GNU C23 (GCC) version 15.2.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "D:/CLion 2026.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/include"]
+        ignore line: [ignoring nonexistent directory "/win/include"]
+        ignore line: [ignoring duplicate directory "D:/CLion 2026.2.2/bin/mingw/lib/gcc/../../include"]
+        ignore line: [ignoring duplicate directory "D:/CLion 2026.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "D:/CLion 2026.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [ignoring nonexistent directory "/mingw/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include]
+        ignore line: [ D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include]
+        ignore line: [ D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
+        ignore line: [ D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 8d345432f9763c84c875202b30822017]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_f56ec.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_f56ec.dir\\']
+        ignore line: [ D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_f56ec.dir\\CMakeCCompilerABI.c.obj C:\\Users\\vladk\\AppData\\Local\\Temp\\ccFcTjMa.s]
+        ignore line: [GNU assembler version 2.46 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.46]
+        ignore line: [COMPILER_PATH=D:/CLion 2026.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../libexec/gcc/]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_f56ec.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_f56ec.dir\\CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_f56ec.exe]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_f56ec.dir\\link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=D:/CLion\\ 2026.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-15.2.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-pc-linux-gnu --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win --with-mpfr=/win --with-mpc=/win]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 15.2.0 (GCC) ]
+        ignore line: [COMPILER_PATH=D:/CLion 2026.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../libexec/gcc/]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f56ec.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_f56ec.']
+        ignore line: [ D:/CLion 2026.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -m i386pep -Bdynamic -o cmTC_f56ec.exe D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_f56ec.dir/objects.a --no-whole-archive --out-implib libcmTC_f56ec.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [collect2 version 15.2.0]
+        link line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -m i386pep -Bdynamic -o cmTC_f56ec.exe D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_f56ec.dir/objects.a --no-whole-archive --out-implib libcmTC_f56ec.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o] ==> linker [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe]
+        link line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -m i386pep -Bdynamic -o cmTC_f56ec.exe D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_f56ec.dir/objects.a --no-whole-archive --out-implib libcmTC_f56ec.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o] ==> linker architecture flags [-m;i386pep]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -m i386pep -Bdynamic -o cmTC_f56ec.exe D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_f56ec.dir/objects.a --no-whole-archive --out-implib libcmTC_f56ec.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [GNU ld (GNU Binutils) 2.46]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f56ec.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_f56ec.']
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_f56ec.dir/objects.a]
+        ignore line: ["D:\\CLion 2026.2.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_f56ec.dir/objects.a @CMakeFiles\\cmTC_f56ec.dir\\objects1.rsp]
+        ignore line: ["D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"  -v -Wl -v -Wl --whole-archive CMakeFiles\\cmTC_f56ec.dir/objects.a -Wl --no-whole-archive -o cmTC_f56ec.exe -Wl --out-implib libcmTC_f56ec.dll.a -Wl --major-image-version 0 --minor-image-version 0]
+        ignore line: [mingw32-make[1]: Leaving directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-u7ouso']
+        ignore line: []
+        ignore line: []
+        linker tool for 'C': D:/CLion 2026.2.2/bin/mingw/x86_64-w64-mingw32/bin/ld.exe -m;i386pep
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeDetermineLinkerId.cmake:41 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:337 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "D:/CLion 2026.2.2/bin/mingw/x86_64-w64-mingw32/bin/ld.exe" "-v"
+      GNU ld (GNU Binutils) 2.46
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jkywzc"
+      binary: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jkywzc"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: false
+      stdout: |
+        Change Dir: 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jkywzc'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_4f00d/fast
+        D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_4f00d.dir\\build.make CMakeFiles/cmTC_4f00d.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jkywzc'
+        Building CXX object CMakeFiles/cmTC_4f00d.dir/CMakeCXXCompilerABI.cpp.obj
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\c++.exe"   -v -o CMakeFiles\\cmTC_4f00d.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp"
+        Using built-in specs.
+        COLLECT_GCC=D:\\CLion 2026.2.2\\bin\\mingw\\bin\\c++.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-15.2.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-pc-linux-gnu --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win --with-mpfr=/win --with-mpc=/win
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 15.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_4f00d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_4f00d.dir\\'
+         D:/CLion 2026.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_4f00d.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\vladk\\AppData\\Local\\Temp\\ccsJ8Ekj.s
+        GNU C++17 (GCC) version 15.2.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "D:/CLion 2026.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++"
+        ignoring duplicate directory "D:/CLion 2026.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32"
+        ignoring duplicate directory "D:/CLion 2026.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/backward"
+        ignoring duplicate directory "D:/CLion 2026.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/include"
+        ignoring nonexistent directory "/win/include"
+        ignoring duplicate directory "D:/CLion 2026.2.2/bin/mingw/lib/gcc/../../include"
+        ignoring duplicate directory "D:/CLion 2026.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed"
+        ignoring duplicate directory "D:/CLion 2026.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include"
+        ignoring nonexistent directory "/mingw/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++
+         D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32
+         D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/backward
+         D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include
+         D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include
+         D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed
+         D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include
+        End of search list.
+        Compiler executable checksum: c1512faba55d1ec7dbfa5b4ad89267e7
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_4f00d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_4f00d.dir\\'
+         D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_4f00d.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\vladk\\AppData\\Local\\Temp\\ccsJ8Ekj.s
+        GNU assembler version 2.46 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.46
+        COMPILER_PATH=D:/CLion 2026.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/;D:/CLion 2026.2.2/bin/mingw/bin/../libexec/gcc/;D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/;D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_4f00d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_4f00d.dir\\CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_4f00d.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_4f00d.dir\\link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=D:\\CLion 2026.2.2\\bin\\mingw\\bin\\c++.exe
+        COLLECT_LTO_WRAPPER=D:/CLion\\ 2026.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-15.2.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-pc-linux-gnu --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win --with-mpfr=/win --with-mpc=/win
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 15.2.0 (GCC) 
+        COMPILER_PATH=D:/CLion 2026.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/;D:/CLion 2026.2.2/bin/mingw/bin/../libexec/gcc/;D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/;D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4f00d.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_4f00d.'
+         D:/CLion 2026.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -m i386pep -Bdynamic -o cmTC_4f00d.exe D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_4f00d.dir/objects.a --no-whole-archive --out-implib libcmTC_4f00d.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        collect2 version 15.2.0
+        D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -m i386pep -Bdynamic -o cmTC_4f00d.exe D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_4f00d.dir/objects.a --no-whole-archive --out-implib libcmTC_4f00d.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        GNU ld (GNU Binutils) 2.46
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4f00d.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_4f00d.'
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_4f00d.dir/objects.a
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_4f00d.dir/objects.a @CMakeFiles\\cmTC_4f00d.dir\\objects1.rsp
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\c++.exe"  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_4f00d.dir/objects.a -Wl,--no-whole-archive -o cmTC_4f00d.exe -Wl,--out-implib,libcmTC_4f00d.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make[1]: Leaving directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jkywzc'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:255 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++]
+          add: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32]
+          add: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/backward]
+          add: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include]
+          add: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include]
+          add: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
+          add: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include]
+        end of search list found
+        collapse include dir [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++] ==> [D:/CLion 2026.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++]
+        collapse include dir [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32] ==> [D:/CLion 2026.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32]
+        collapse include dir [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/backward] ==> [D:/CLion 2026.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/backward]
+        collapse include dir [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include] ==> [D:/CLion 2026.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/15.2.0/include]
+        collapse include dir [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include] ==> [D:/CLion 2026.2.2/bin/mingw/include]
+        collapse include dir [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed] ==> [D:/CLion 2026.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
+        collapse include dir [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include] ==> [D:/CLion 2026.2.2/bin/mingw/x86_64-w64-mingw32/include]
+        implicit include dirs: [D:/CLion 2026.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++;D:/CLion 2026.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32;D:/CLion 2026.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/backward;D:/CLion 2026.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/15.2.0/include;D:/CLion 2026.2.2/bin/mingw/include;D:/CLion 2026.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed;D:/CLion 2026.2.2/bin/mingw/x86_64-w64-mingw32/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
+        ignore line: [Change Dir: 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jkywzc']
+        ignore line: []
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_4f00d/fast]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_4f00d.dir\\build.make CMakeFiles/cmTC_4f00d.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jkywzc']
+        ignore line: [Building CXX object CMakeFiles/cmTC_4f00d.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: ["D:\\CLion 2026.2.2\\bin\\mingw\\bin\\c++.exe"   -v -o CMakeFiles\\cmTC_4f00d.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=D:\\CLion 2026.2.2\\bin\\mingw\\bin\\c++.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-15.2.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-pc-linux-gnu --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win --with-mpfr=/win --with-mpc=/win]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 15.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_4f00d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_4f00d.dir\\']
+        ignore line: [ D:/CLion 2026.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_4f00d.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\vladk\\AppData\\Local\\Temp\\ccsJ8Ekj.s]
+        ignore line: [GNU C++17 (GCC) version 15.2.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "D:/CLion 2026.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++"]
+        ignore line: [ignoring duplicate directory "D:/CLion 2026.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32"]
+        ignore line: [ignoring duplicate directory "D:/CLion 2026.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/backward"]
+        ignore line: [ignoring duplicate directory "D:/CLion 2026.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/include"]
+        ignore line: [ignoring nonexistent directory "/win/include"]
+        ignore line: [ignoring duplicate directory "D:/CLion 2026.2.2/bin/mingw/lib/gcc/../../include"]
+        ignore line: [ignoring duplicate directory "D:/CLion 2026.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "D:/CLion 2026.2.2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [ignoring nonexistent directory "/mingw/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++]
+        ignore line: [ D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32]
+        ignore line: [ D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/backward]
+        ignore line: [ D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include]
+        ignore line: [ D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../include]
+        ignore line: [ D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
+        ignore line: [ D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: c1512faba55d1ec7dbfa5b4ad89267e7]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_4f00d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_4f00d.dir\\']
+        ignore line: [ D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_4f00d.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\vladk\\AppData\\Local\\Temp\\ccsJ8Ekj.s]
+        ignore line: [GNU assembler version 2.46 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.46]
+        ignore line: [COMPILER_PATH=D:/CLion 2026.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../libexec/gcc/]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_4f00d.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_4f00d.dir\\CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_4f00d.exe]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_4f00d.dir\\link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=D:\\CLion 2026.2.2\\bin\\mingw\\bin\\c++.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=D:/CLion\\ 2026.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-15.2.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-pc-linux-gnu --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win --with-mpfr=/win --with-mpc=/win]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 15.2.0 (GCC) ]
+        ignore line: [COMPILER_PATH=D:/CLion 2026.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../libexec/gcc/]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4f00d.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_4f00d.']
+        ignore line: [ D:/CLion 2026.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -m i386pep -Bdynamic -o cmTC_4f00d.exe D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_4f00d.dir/objects.a --no-whole-archive --out-implib libcmTC_4f00d.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [collect2 version 15.2.0]
+        link line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -m i386pep -Bdynamic -o cmTC_4f00d.exe D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_4f00d.dir/objects.a --no-whole-archive --out-implib libcmTC_4f00d.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o] ==> linker [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe]
+        link line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -m i386pep -Bdynamic -o cmTC_4f00d.exe D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LD:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_4f00d.dir/objects.a --no-whole-archive --out-implib libcmTC_4f00d.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o] ==> linker architecture flags [-m;i386pep]
+        ignore line: [D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -m i386pep -Bdynamic -o cmTC_4f00d.exe D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/.
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CLion 2026.2.2/bin/cmake/win/x64/share/cmake-4.3/Modules/CheckIncludeFiles.cmake:201 (try_compile)"
+      - "external/freeglut/CMakeLists.txt:376 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file sys/types.h"
+    directories:
+      source: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vx1oeo"
+      binary: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vx1oeo"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -pedantic"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_WARN_DEPRECATED: "ON"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vx1oeo'
+        
+        Run Build Command(s): "D:/CLion 2026.2.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_b4020/fast
+        D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_b4020.dir\\build.make CMakeFiles/cmTC_b4020.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vx1oeo'
+        Building C object CMakeFiles/cmTC_b4020.dir/HAVE_SYS_TYPES_H.c.obj
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"   -Wall -pedantic  -fdiagnostics-color=always -o CMakeFiles\\cmTC_b4020.dir\\HAVE_SYS_TYPES_H.c.obj -c C:\\Users\\vladk\\CLionProjects\\untitled\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-vx1oeo\\HAVE_SYS_TYPES_H.c
+        Linking C executable cmTC_b4020.exe
+        "D:\\CLion 2026.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_b4020.dir\\link.txt --verbose=1
+        "D:\\CLion 2026.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_b4020.dir/objects.a
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_b4020.dir/objects.a @CMakeFiles\\cmTC_b4020.dir\\objects1.rsp
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"  -Wall -pedantic  -Wl,--whole-archive CMakeFiles\\cmTC_b4020.dir/objects.a -Wl,--no-whole-archive -o cmTC_b4020.exe -Wl,--out-implib,libcmTC_b4020.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_b4020.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vx1oeo'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CLion 2026.2.2/bin/cmake/win/x64/share/cmake-4.3/Modules/CheckIncludeFiles.cmake:201 (try_compile)"
+      - "external/freeglut/CMakeLists.txt:377 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file unistd.h"
+    directories:
+      source: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-r5gs19"
+      binary: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-r5gs19"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -pedantic"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_WARN_DEPRECATED: "ON"
+    buildResult:
+      variable: "HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-r5gs19'
+        
+        Run Build Command(s): "D:/CLion 2026.2.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_3c206/fast
+        D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_3c206.dir\\build.make CMakeFiles/cmTC_3c206.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-r5gs19'
+        Building C object CMakeFiles/cmTC_3c206.dir/HAVE_UNISTD_H.c.obj
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"   -Wall -pedantic  -fdiagnostics-color=always -o CMakeFiles\\cmTC_3c206.dir\\HAVE_UNISTD_H.c.obj -c C:\\Users\\vladk\\CLionProjects\\untitled\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-r5gs19\\HAVE_UNISTD_H.c
+        Linking C executable cmTC_3c206.exe
+        "D:\\CLion 2026.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_3c206.dir\\link.txt --verbose=1
+        "D:\\CLion 2026.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_3c206.dir/objects.a
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_3c206.dir/objects.a @CMakeFiles\\cmTC_3c206.dir\\objects1.rsp
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"  -Wall -pedantic  -Wl,--whole-archive CMakeFiles\\cmTC_3c206.dir/objects.a -Wl,--no-whole-archive -o cmTC_3c206.exe -Wl,--out-implib,libcmTC_3c206.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_3c206.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-r5gs19'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CLion 2026.2.2/bin/cmake/win/x64/share/cmake-4.3/Modules/CheckIncludeFiles.cmake:201 (try_compile)"
+      - "external/freeglut/CMakeLists.txt:378 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file sys/time.h"
+    directories:
+      source: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-glzjc8"
+      binary: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-glzjc8"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -pedantic"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_WARN_DEPRECATED: "ON"
+    buildResult:
+      variable: "HAVE_SYS_TIME_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-glzjc8'
+        
+        Run Build Command(s): "D:/CLion 2026.2.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_1a05d/fast
+        D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_1a05d.dir\\build.make CMakeFiles/cmTC_1a05d.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-glzjc8'
+        Building C object CMakeFiles/cmTC_1a05d.dir/HAVE_SYS_TIME_H.c.obj
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"   -Wall -pedantic  -fdiagnostics-color=always -o CMakeFiles\\cmTC_1a05d.dir\\HAVE_SYS_TIME_H.c.obj -c C:\\Users\\vladk\\CLionProjects\\untitled\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-glzjc8\\HAVE_SYS_TIME_H.c
+        Linking C executable cmTC_1a05d.exe
+        "D:\\CLion 2026.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_1a05d.dir\\link.txt --verbose=1
+        "D:\\CLion 2026.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_1a05d.dir/objects.a
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_1a05d.dir/objects.a @CMakeFiles\\cmTC_1a05d.dir\\objects1.rsp
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"  -Wall -pedantic  -Wl,--whole-archive CMakeFiles\\cmTC_1a05d.dir/objects.a -Wl,--no-whole-archive -o cmTC_1a05d.exe -Wl,--out-implib,libcmTC_1a05d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_1a05d.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-glzjc8'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CLion 2026.2.2/bin/cmake/win/x64/share/cmake-4.3/Modules/CheckIncludeFiles.cmake:201 (try_compile)"
+      - "external/freeglut/CMakeLists.txt:379 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file stdbool.h"
+    directories:
+      source: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7ffyws"
+      binary: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7ffyws"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -pedantic"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_WARN_DEPRECATED: "ON"
+    buildResult:
+      variable: "HAVE_STDBOOL_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7ffyws'
+        
+        Run Build Command(s): "D:/CLion 2026.2.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_6f36c/fast
+        D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_6f36c.dir\\build.make CMakeFiles/cmTC_6f36c.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7ffyws'
+        Building C object CMakeFiles/cmTC_6f36c.dir/HAVE_STDBOOL_H.c.obj
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"   -Wall -pedantic  -fdiagnostics-color=always -o CMakeFiles\\cmTC_6f36c.dir\\HAVE_STDBOOL_H.c.obj -c C:\\Users\\vladk\\CLionProjects\\untitled\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-7ffyws\\HAVE_STDBOOL_H.c
+        Linking C executable cmTC_6f36c.exe
+        "D:\\CLion 2026.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_6f36c.dir\\link.txt --verbose=1
+        "D:\\CLion 2026.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_6f36c.dir/objects.a
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_6f36c.dir/objects.a @CMakeFiles\\cmTC_6f36c.dir\\objects1.rsp
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"  -Wall -pedantic  -Wl,--whole-archive CMakeFiles\\cmTC_6f36c.dir/objects.a -Wl,--no-whole-archive -o cmTC_6f36c.exe -Wl,--out-implib,libcmTC_6f36c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_6f36c.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7ffyws'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CLion 2026.2.2/bin/cmake/win/x64/share/cmake-4.3/Modules/CheckIncludeFiles.cmake:201 (try_compile)"
+      - "external/freeglut/CMakeLists.txt:380 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file sys/param.h"
+    directories:
+      source: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gsi5qp"
+      binary: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gsi5qp"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -pedantic"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_WARN_DEPRECATED: "ON"
+    buildResult:
+      variable: "HAVE_SYS_PARAM_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gsi5qp'
+        
+        Run Build Command(s): "D:/CLion 2026.2.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_fc6ed/fast
+        D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_fc6ed.dir\\build.make CMakeFiles/cmTC_fc6ed.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gsi5qp'
+        Building C object CMakeFiles/cmTC_fc6ed.dir/HAVE_SYS_PARAM_H.c.obj
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"   -Wall -pedantic  -fdiagnostics-color=always -o CMakeFiles\\cmTC_fc6ed.dir\\HAVE_SYS_PARAM_H.c.obj -c C:\\Users\\vladk\\CLionProjects\\untitled\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-gsi5qp\\HAVE_SYS_PARAM_H.c
+        Linking C executable cmTC_fc6ed.exe
+        "D:\\CLion 2026.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_fc6ed.dir\\link.txt --verbose=1
+        "D:\\CLion 2026.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_fc6ed.dir/objects.a
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_fc6ed.dir/objects.a @CMakeFiles\\cmTC_fc6ed.dir\\objects1.rsp
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"  -Wall -pedantic  -Wl,--whole-archive CMakeFiles\\cmTC_fc6ed.dir/objects.a -Wl,--no-whole-archive -o cmTC_fc6ed.exe -Wl,--out-implib,libcmTC_fc6ed.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_fc6ed.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gsi5qp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CLion 2026.2.2/bin/cmake/win/x64/share/cmake-4.3/Modules/CheckIncludeFiles.cmake:201 (try_compile)"
+      - "external/freeglut/CMakeLists.txt:381 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file sys/ioctl.h"
+    directories:
+      source: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4rtp7m"
+      binary: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4rtp7m"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -pedantic"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_WARN_DEPRECATED: "ON"
+    buildResult:
+      variable: "HAVE_SYS_IOCTL_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4rtp7m'
+        
+        Run Build Command(s): "D:/CLion 2026.2.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_7b0f2/fast
+        D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_7b0f2.dir\\build.make CMakeFiles/cmTC_7b0f2.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4rtp7m'
+        Building C object CMakeFiles/cmTC_7b0f2.dir/HAVE_SYS_IOCTL_H.c.obj
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"   -Wall -pedantic  -fdiagnostics-color=always -o CMakeFiles\\cmTC_7b0f2.dir\\HAVE_SYS_IOCTL_H.c.obj -c C:\\Users\\vladk\\CLionProjects\\untitled\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-4rtp7m\\HAVE_SYS_IOCTL_H.c
+        \x1b[01m\x1b[KC:\\Users\\vladk\\CLionProjects\\untitled\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-4rtp7m\\HAVE_SYS_IOCTL_H.c:2:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Ksys/ioctl.h: No such file or directory
+            2 | #include \x1b[01;31m\x1b[K<sys/ioctl.h>\x1b[m\x1b[K
+              |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K
+        compilation terminated.
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_7b0f2.dir\\build.make:80: CMakeFiles/cmTC_7b0f2.dir/HAVE_SYS_IOCTL_H.c.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4rtp7m'
+        mingw32-make: *** [Makefile:133: cmTC_7b0f2/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CLion 2026.2.2/bin/cmake/win/x64/share/cmake-4.3/Modules/CheckIncludeFiles.cmake:201 (try_compile)"
+      - "external/freeglut/CMakeLists.txt:382 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file fcntl.h"
+    directories:
+      source: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pk9l2i"
+      binary: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pk9l2i"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -pedantic"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_WARN_DEPRECATED: "ON"
+    buildResult:
+      variable: "HAVE_FCNTL_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pk9l2i'
+        
+        Run Build Command(s): "D:/CLion 2026.2.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_e154b/fast
+        D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_e154b.dir\\build.make CMakeFiles/cmTC_e154b.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pk9l2i'
+        Building C object CMakeFiles/cmTC_e154b.dir/HAVE_FCNTL_H.c.obj
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"   -Wall -pedantic  -fdiagnostics-color=always -o CMakeFiles\\cmTC_e154b.dir\\HAVE_FCNTL_H.c.obj -c C:\\Users\\vladk\\CLionProjects\\untitled\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-pk9l2i\\HAVE_FCNTL_H.c
+        Linking C executable cmTC_e154b.exe
+        "D:\\CLion 2026.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_e154b.dir\\link.txt --verbose=1
+        "D:\\CLion 2026.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_e154b.dir/objects.a
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_e154b.dir/objects.a @CMakeFiles\\cmTC_e154b.dir\\objects1.rsp
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"  -Wall -pedantic  -Wl,--whole-archive CMakeFiles\\cmTC_e154b.dir/objects.a -Wl,--no-whole-archive -o cmTC_e154b.exe -Wl,--out-implib,libcmTC_e154b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_e154b.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pk9l2i'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CLion 2026.2.2/bin/cmake/win/x64/share/cmake-4.3/Modules/CheckIncludeFiles.cmake:201 (try_compile)"
+      - "external/freeglut/CMakeLists.txt:383 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file usbhid.h"
+    directories:
+      source: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-eaigas"
+      binary: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-eaigas"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -pedantic"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_WARN_DEPRECATED: "ON"
+    buildResult:
+      variable: "HAVE_USBHID_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-eaigas'
+        
+        Run Build Command(s): "D:/CLion 2026.2.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_2f406/fast
+        D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_2f406.dir\\build.make CMakeFiles/cmTC_2f406.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-eaigas'
+        Building C object CMakeFiles/cmTC_2f406.dir/HAVE_USBHID_H.c.obj
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"   -Wall -pedantic  -fdiagnostics-color=always -o CMakeFiles\\cmTC_2f406.dir\\HAVE_USBHID_H.c.obj -c C:\\Users\\vladk\\CLionProjects\\untitled\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-eaigas\\HAVE_USBHID_H.c
+        \x1b[01m\x1b[Kcc1.exe:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[KC:\\Users\\vladk\\CLionProjects\\untitled\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-eaigas\\HAVE_USBHID_H.c: No such file or directory
+        compilation terminated.
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_2f406.dir\\build.make:80: CMakeFiles/cmTC_2f406.dir/HAVE_USBHID_H.c.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-eaigas'
+        mingw32-make: *** [Makefile:133: cmTC_2f406/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CLion 2026.2.2/bin/cmake/win/x64/share/cmake-4.3/Modules/CheckFunctionExists.cmake:167 (try_compile)"
+      - "external/freeglut/CMakeLists.txt:384 (CHECK_FUNCTION_EXISTS)"
+    checks:
+      - "Looking for gettimeofday"
+    directories:
+      source: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8f74eq"
+      binary: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8f74eq"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -pedantic"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_WARN_DEPRECATED: "ON"
+    buildResult:
+      variable: "HAVE_GETTIMEOFDAY"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8f74eq'
+        
+        Run Build Command(s): "D:/CLion 2026.2.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_9a230/fast
+        D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_9a230.dir\\build.make CMakeFiles/cmTC_9a230.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8f74eq'
+        Building C object CMakeFiles/cmTC_9a230.dir/CheckFunctionExists.c.obj
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"   -Wall -pedantic -DCHECK_FUNCTION_EXISTS=gettimeofday -fdiagnostics-color=always -o CMakeFiles\\cmTC_9a230.dir\\CheckFunctionExists.c.obj -c C:\\Users\\vladk\\CLionProjects\\untitled\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-8f74eq\\CheckFunctionExists.c
+        Linking C executable cmTC_9a230.exe
+        "D:\\CLion 2026.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_9a230.dir\\link.txt --verbose=1
+        "D:\\CLion 2026.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_9a230.dir/objects.a
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_9a230.dir/objects.a @CMakeFiles\\cmTC_9a230.dir\\objects1.rsp
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"  -Wall -pedantic -DCHECK_FUNCTION_EXISTS=gettimeofday -Wl,--whole-archive CMakeFiles\\cmTC_9a230.dir/objects.a -Wl,--no-whole-archive -o cmTC_9a230.exe -Wl,--out-implib,libcmTC_9a230.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_9a230.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8f74eq'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CLion 2026.2.2/bin/cmake/win/x64/share/cmake-4.3/Modules/CheckFunctionExists.cmake:167 (try_compile)"
+      - "external/freeglut/CMakeLists.txt:385 (CHECK_FUNCTION_EXISTS)"
+    checks:
+      - "Looking for XParseGeometry"
+    directories:
+      source: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-28imuz"
+      binary: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-28imuz"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -pedantic"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_WARN_DEPRECATED: "ON"
+    buildResult:
+      variable: "HAVE_XPARSEGEOMETRY"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-28imuz'
+        
+        Run Build Command(s): "D:/CLion 2026.2.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_89d2c/fast
+        D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_89d2c.dir\\build.make CMakeFiles/cmTC_89d2c.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-28imuz'
+        Building C object CMakeFiles/cmTC_89d2c.dir/CheckFunctionExists.c.obj
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"   -Wall -pedantic -DCHECK_FUNCTION_EXISTS=XParseGeometry -fdiagnostics-color=always -o CMakeFiles\\cmTC_89d2c.dir\\CheckFunctionExists.c.obj -c C:\\Users\\vladk\\CLionProjects\\untitled\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-28imuz\\CheckFunctionExists.c
+        Linking C executable cmTC_89d2c.exe
+        "D:\\CLion 2026.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_89d2c.dir\\link.txt --verbose=1
+        D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles\\cmTC_89d2c.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `XParseGeometry'
+        collect2.exe: error: ld returned 1 exit status
+        "D:\\CLion 2026.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_89d2c.dir/objects.a
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_89d2c.dir/objects.a @CMakeFiles\\cmTC_89d2c.dir\\objects1.rsp
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"  -Wall -pedantic -DCHECK_FUNCTION_EXISTS=XParseGeometry -Wl,--whole-archive CMakeFiles\\cmTC_89d2c.dir/objects.a -Wl,--no-whole-archive -o cmTC_89d2c.exe -Wl,--out-implib,libcmTC_89d2c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_89d2c.dir\\linkLibs.rsp
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_89d2c.dir\\build.make:103: cmTC_89d2c.exe] Error 1
+        mingw32-make[1]: Leaving directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-28imuz'
+        mingw32-make: *** [Makefile:133: cmTC_89d2c/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CLion 2026.2.2/bin/cmake/win/x64/share/cmake-4.3/Modules/CheckIncludeFiles.cmake:201 (try_compile)"
+      - "external/freeglut/CMakeLists.txt:393 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file stdint.h"
+    directories:
+      source: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5duoua"
+      binary: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5duoua"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -pedantic"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_WARN_DEPRECATED: "ON"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5duoua'
+        
+        Run Build Command(s): "D:/CLion 2026.2.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_663bd/fast
+        D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_663bd.dir\\build.make CMakeFiles/cmTC_663bd.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5duoua'
+        Building C object CMakeFiles/cmTC_663bd.dir/HAVE_STDINT_H.c.obj
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"   -Wall -pedantic  -fdiagnostics-color=always -o CMakeFiles\\cmTC_663bd.dir\\HAVE_STDINT_H.c.obj -c C:\\Users\\vladk\\CLionProjects\\untitled\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-5duoua\\HAVE_STDINT_H.c
+        Linking C executable cmTC_663bd.exe
+        "D:\\CLion 2026.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_663bd.dir\\link.txt --verbose=1
+        "D:\\CLion 2026.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_663bd.dir/objects.a
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_663bd.dir/objects.a @CMakeFiles\\cmTC_663bd.dir\\objects1.rsp
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"  -Wall -pedantic  -Wl,--whole-archive CMakeFiles\\cmTC_663bd.dir/objects.a -Wl,--no-whole-archive -o cmTC_663bd.exe -Wl,--out-implib,libcmTC_663bd.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_663bd.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5duoua'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CLion 2026.2.2/bin/cmake/win/x64/share/cmake-4.3/Modules/CheckIncludeFiles.cmake:201 (try_compile)"
+      - "external/freeglut/CMakeLists.txt:394 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file inttypes.h"
+    directories:
+      source: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7b2jbm"
+      binary: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7b2jbm"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -pedantic"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_WARN_DEPRECATED: "ON"
+    buildResult:
+      variable: "HAVE_INTTYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7b2jbm'
+        
+        Run Build Command(s): "D:/CLion 2026.2.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_d0a60/fast
+        D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_d0a60.dir\\build.make CMakeFiles/cmTC_d0a60.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7b2jbm'
+        Building C object CMakeFiles/cmTC_d0a60.dir/HAVE_INTTYPES_H.c.obj
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"   -Wall -pedantic  -fdiagnostics-color=always -o CMakeFiles\\cmTC_d0a60.dir\\HAVE_INTTYPES_H.c.obj -c C:\\Users\\vladk\\CLionProjects\\untitled\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-7b2jbm\\HAVE_INTTYPES_H.c
+        Linking C executable cmTC_d0a60.exe
+        "D:\\CLion 2026.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_d0a60.dir\\link.txt --verbose=1
+        "D:\\CLion 2026.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_d0a60.dir/objects.a
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_d0a60.dir/objects.a @CMakeFiles\\cmTC_d0a60.dir\\objects1.rsp
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"  -Wall -pedantic  -Wl,--whole-archive CMakeFiles\\cmTC_d0a60.dir/objects.a -Wl,--no-whole-archive -o cmTC_d0a60.exe -Wl,--out-implib,libcmTC_d0a60.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_d0a60.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7b2jbm'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CheckIncludeFiles.cmake:184 (try_compile)"
+      - "external/freeglut/CMakeLists.txt:376 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file sys/types.h"
+    directories:
+      source: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-e9xj8z"
+      binary: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-e9xj8z"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -pedantic"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-e9xj8z'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_fdf21/fast
+        D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_fdf21.dir\\build.make CMakeFiles/cmTC_fdf21.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-e9xj8z'
+        Building C object CMakeFiles/cmTC_fdf21.dir/HAVE_SYS_TYPES_H.c.obj
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"   -Wall -pedantic  -o CMakeFiles\\cmTC_fdf21.dir\\HAVE_SYS_TYPES_H.c.obj -c C:\\Users\\vladk\\CLionProjects\\untitled\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-e9xj8z\\HAVE_SYS_TYPES_H.c
+        Linking C executable cmTC_fdf21.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_fdf21.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_fdf21.dir/objects.a
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_fdf21.dir/objects.a @CMakeFiles\\cmTC_fdf21.dir\\objects1.rsp
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"  -Wall -pedantic  -Wl,--whole-archive CMakeFiles\\cmTC_fdf21.dir/objects.a -Wl,--no-whole-archive -o cmTC_fdf21.exe -Wl,--out-implib,libcmTC_fdf21.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_fdf21.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-e9xj8z'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CheckIncludeFiles.cmake:184 (try_compile)"
+      - "external/freeglut/CMakeLists.txt:377 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file unistd.h"
+    directories:
+      source: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-30yp8x"
+      binary: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-30yp8x"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -pedantic"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-30yp8x'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_7df0e/fast
+        D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_7df0e.dir\\build.make CMakeFiles/cmTC_7df0e.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-30yp8x'
+        Building C object CMakeFiles/cmTC_7df0e.dir/HAVE_UNISTD_H.c.obj
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"   -Wall -pedantic  -o CMakeFiles\\cmTC_7df0e.dir\\HAVE_UNISTD_H.c.obj -c C:\\Users\\vladk\\CLionProjects\\untitled\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-30yp8x\\HAVE_UNISTD_H.c
+        Linking C executable cmTC_7df0e.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_7df0e.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_7df0e.dir/objects.a
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_7df0e.dir/objects.a @CMakeFiles\\cmTC_7df0e.dir\\objects1.rsp
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"  -Wall -pedantic  -Wl,--whole-archive CMakeFiles\\cmTC_7df0e.dir/objects.a -Wl,--no-whole-archive -o cmTC_7df0e.exe -Wl,--out-implib,libcmTC_7df0e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_7df0e.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-30yp8x'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CheckIncludeFiles.cmake:184 (try_compile)"
+      - "external/freeglut/CMakeLists.txt:378 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file sys/time.h"
+    directories:
+      source: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-poak43"
+      binary: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-poak43"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -pedantic"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SYS_TIME_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-poak43'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_65d2d/fast
+        D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_65d2d.dir\\build.make CMakeFiles/cmTC_65d2d.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-poak43'
+        Building C object CMakeFiles/cmTC_65d2d.dir/HAVE_SYS_TIME_H.c.obj
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"   -Wall -pedantic  -o CMakeFiles\\cmTC_65d2d.dir\\HAVE_SYS_TIME_H.c.obj -c C:\\Users\\vladk\\CLionProjects\\untitled\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-poak43\\HAVE_SYS_TIME_H.c
+        Linking C executable cmTC_65d2d.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_65d2d.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_65d2d.dir/objects.a
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_65d2d.dir/objects.a @CMakeFiles\\cmTC_65d2d.dir\\objects1.rsp
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"  -Wall -pedantic  -Wl,--whole-archive CMakeFiles\\cmTC_65d2d.dir/objects.a -Wl,--no-whole-archive -o cmTC_65d2d.exe -Wl,--out-implib,libcmTC_65d2d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_65d2d.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-poak43'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CheckIncludeFiles.cmake:184 (try_compile)"
+      - "external/freeglut/CMakeLists.txt:379 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file stdbool.h"
+    directories:
+      source: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rk02lc"
+      binary: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rk02lc"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -pedantic"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STDBOOL_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rk02lc'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_dfa06/fast
+        D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_dfa06.dir\\build.make CMakeFiles/cmTC_dfa06.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rk02lc'
+        Building C object CMakeFiles/cmTC_dfa06.dir/HAVE_STDBOOL_H.c.obj
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"   -Wall -pedantic  -o CMakeFiles\\cmTC_dfa06.dir\\HAVE_STDBOOL_H.c.obj -c C:\\Users\\vladk\\CLionProjects\\untitled\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-rk02lc\\HAVE_STDBOOL_H.c
+        Linking C executable cmTC_dfa06.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_dfa06.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_dfa06.dir/objects.a
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_dfa06.dir/objects.a @CMakeFiles\\cmTC_dfa06.dir\\objects1.rsp
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"  -Wall -pedantic  -Wl,--whole-archive CMakeFiles\\cmTC_dfa06.dir/objects.a -Wl,--no-whole-archive -o cmTC_dfa06.exe -Wl,--out-implib,libcmTC_dfa06.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_dfa06.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rk02lc'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CheckIncludeFiles.cmake:184 (try_compile)"
+      - "external/freeglut/CMakeLists.txt:380 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file sys/param.h"
+    directories:
+      source: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-d6lz9w"
+      binary: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-d6lz9w"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -pedantic"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SYS_PARAM_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-d6lz9w'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_b8654/fast
+        D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_b8654.dir\\build.make CMakeFiles/cmTC_b8654.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-d6lz9w'
+        Building C object CMakeFiles/cmTC_b8654.dir/HAVE_SYS_PARAM_H.c.obj
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"   -Wall -pedantic  -o CMakeFiles\\cmTC_b8654.dir\\HAVE_SYS_PARAM_H.c.obj -c C:\\Users\\vladk\\CLionProjects\\untitled\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-d6lz9w\\HAVE_SYS_PARAM_H.c
+        Linking C executable cmTC_b8654.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_b8654.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_b8654.dir/objects.a
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_b8654.dir/objects.a @CMakeFiles\\cmTC_b8654.dir\\objects1.rsp
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"  -Wall -pedantic  -Wl,--whole-archive CMakeFiles\\cmTC_b8654.dir/objects.a -Wl,--no-whole-archive -o cmTC_b8654.exe -Wl,--out-implib,libcmTC_b8654.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_b8654.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-d6lz9w'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CheckIncludeFiles.cmake:184 (try_compile)"
+      - "external/freeglut/CMakeLists.txt:381 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file sys/ioctl.h"
+    directories:
+      source: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xqizua"
+      binary: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xqizua"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -pedantic"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SYS_IOCTL_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xqizua'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_f75da/fast
+        D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_f75da.dir\\build.make CMakeFiles/cmTC_f75da.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xqizua'
+        Building C object CMakeFiles/cmTC_f75da.dir/HAVE_SYS_IOCTL_H.c.obj
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"   -Wall -pedantic  -o CMakeFiles\\cmTC_f75da.dir\\HAVE_SYS_IOCTL_H.c.obj -c C:\\Users\\vladk\\CLionProjects\\untitled\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-xqizua\\HAVE_SYS_IOCTL_H.c
+        C:\\Users\\vladk\\CLionProjects\\untitled\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-xqizua\\HAVE_SYS_IOCTL_H.c:2:10: fatal error: sys/ioctl.h: No such file or directory
+            2 | #include <sys/ioctl.h>
+              |          ^~~~~~~~~~~~~
+        compilation terminated.
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_f75da.dir\\build.make:80: CMakeFiles/cmTC_f75da.dir/HAVE_SYS_IOCTL_H.c.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xqizua'
+        mingw32-make: *** [Makefile:133: cmTC_f75da/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CheckIncludeFiles.cmake:184 (try_compile)"
+      - "external/freeglut/CMakeLists.txt:382 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file fcntl.h"
+    directories:
+      source: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rzexfi"
+      binary: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rzexfi"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -pedantic"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_FCNTL_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rzexfi'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_1e389/fast
+        D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_1e389.dir\\build.make CMakeFiles/cmTC_1e389.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rzexfi'
+        Building C object CMakeFiles/cmTC_1e389.dir/HAVE_FCNTL_H.c.obj
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"   -Wall -pedantic  -o CMakeFiles\\cmTC_1e389.dir\\HAVE_FCNTL_H.c.obj -c C:\\Users\\vladk\\CLionProjects\\untitled\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-rzexfi\\HAVE_FCNTL_H.c
+        Linking C executable cmTC_1e389.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_1e389.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_1e389.dir/objects.a
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_1e389.dir/objects.a @CMakeFiles\\cmTC_1e389.dir\\objects1.rsp
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"  -Wall -pedantic  -Wl,--whole-archive CMakeFiles\\cmTC_1e389.dir/objects.a -Wl,--no-whole-archive -o cmTC_1e389.exe -Wl,--out-implib,libcmTC_1e389.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_1e389.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rzexfi'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CheckIncludeFiles.cmake:184 (try_compile)"
+      - "external/freeglut/CMakeLists.txt:383 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file usbhid.h"
+    directories:
+      source: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mu2b71"
+      binary: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mu2b71"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -pedantic"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_USBHID_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mu2b71'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_a6018/fast
+        D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_a6018.dir\\build.make CMakeFiles/cmTC_a6018.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mu2b71'
+        Building C object CMakeFiles/cmTC_a6018.dir/HAVE_USBHID_H.c.obj
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"   -Wall -pedantic  -o CMakeFiles\\cmTC_a6018.dir\\HAVE_USBHID_H.c.obj -c C:\\Users\\vladk\\CLionProjects\\untitled\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-mu2b71\\HAVE_USBHID_H.c
+        C:\\Users\\vladk\\CLionProjects\\untitled\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-mu2b71\\HAVE_USBHID_H.c:2:10: fatal error: usbhid.h: No such file or directory
+            2 | #include <usbhid.h>
+              |          ^~~~~~~~~~
+        compilation terminated.
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_a6018.dir\\build.make:80: CMakeFiles/cmTC_a6018.dir/HAVE_USBHID_H.c.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mu2b71'
+        mingw32-make: *** [Makefile:133: cmTC_a6018/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CheckFunctionExists.cmake:144 (try_compile)"
+      - "external/freeglut/CMakeLists.txt:384 (CHECK_FUNCTION_EXISTS)"
+    checks:
+      - "Looking for gettimeofday"
+    directories:
+      source: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-osdit8"
+      binary: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-osdit8"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -pedantic"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_GETTIMEOFDAY"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-osdit8'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_a9de1/fast
+        D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_a9de1.dir\\build.make CMakeFiles/cmTC_a9de1.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-osdit8'
+        Building C object CMakeFiles/cmTC_a9de1.dir/CheckFunctionExists.c.obj
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe" -DCHECK_FUNCTION_EXISTS=gettimeofday  -Wall -pedantic  -o CMakeFiles\\cmTC_a9de1.dir\\CheckFunctionExists.c.obj -c C:\\Users\\vladk\\CLionProjects\\untitled\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-osdit8\\CheckFunctionExists.c
+        Linking C executable cmTC_a9de1.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_a9de1.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_a9de1.dir/objects.a
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_a9de1.dir/objects.a @CMakeFiles\\cmTC_a9de1.dir\\objects1.rsp
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"  -Wall -pedantic  -Wl,--whole-archive CMakeFiles\\cmTC_a9de1.dir/objects.a -Wl,--no-whole-archive -o cmTC_a9de1.exe -Wl,--out-implib,libcmTC_a9de1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_a9de1.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-osdit8'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CheckFunctionExists.cmake:144 (try_compile)"
+      - "external/freeglut/CMakeLists.txt:385 (CHECK_FUNCTION_EXISTS)"
+    checks:
+      - "Looking for XParseGeometry"
+    directories:
+      source: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vp6vhc"
+      binary: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vp6vhc"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -pedantic"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_XPARSEGEOMETRY"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vp6vhc'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_00d80/fast
+        D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_00d80.dir\\build.make CMakeFiles/cmTC_00d80.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vp6vhc'
+        Building C object CMakeFiles/cmTC_00d80.dir/CheckFunctionExists.c.obj
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe" -DCHECK_FUNCTION_EXISTS=XParseGeometry  -Wall -pedantic  -o CMakeFiles\\cmTC_00d80.dir\\CheckFunctionExists.c.obj -c C:\\Users\\vladk\\CLionProjects\\untitled\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-vp6vhc\\CheckFunctionExists.c
+        Linking C executable cmTC_00d80.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_00d80.dir\\link.txt --verbose=1
+        D:/CLion 2026.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: CMakeFiles\\cmTC_00d80.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `XParseGeometry'
+        collect2.exe: error: ld returned 1 exit status
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_00d80.dir/objects.a
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_00d80.dir/objects.a @CMakeFiles\\cmTC_00d80.dir\\objects1.rsp
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"  -Wall -pedantic  -Wl,--whole-archive CMakeFiles\\cmTC_00d80.dir/objects.a -Wl,--no-whole-archive -o cmTC_00d80.exe -Wl,--out-implib,libcmTC_00d80.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_00d80.dir\\linkLibs.rsp
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_00d80.dir\\build.make:103: cmTC_00d80.exe] Error 1
+        mingw32-make[1]: Leaving directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vp6vhc'
+        mingw32-make: *** [Makefile:133: cmTC_00d80/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CheckIncludeFiles.cmake:184 (try_compile)"
+      - "external/freeglut/CMakeLists.txt:393 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file stdint.h"
+    directories:
+      source: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ton0um"
+      binary: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ton0um"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -pedantic"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ton0um'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_c9fd0/fast
+        D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_c9fd0.dir\\build.make CMakeFiles/cmTC_c9fd0.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ton0um'
+        Building C object CMakeFiles/cmTC_c9fd0.dir/HAVE_STDINT_H.c.obj
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"   -Wall -pedantic  -o CMakeFiles\\cmTC_c9fd0.dir\\HAVE_STDINT_H.c.obj -c C:\\Users\\vladk\\CLionProjects\\untitled\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-ton0um\\HAVE_STDINT_H.c
+        Linking C executable cmTC_c9fd0.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_c9fd0.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_c9fd0.dir/objects.a
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_c9fd0.dir/objects.a @CMakeFiles\\cmTC_c9fd0.dir\\objects1.rsp
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"  -Wall -pedantic  -Wl,--whole-archive CMakeFiles\\cmTC_c9fd0.dir/objects.a -Wl,--no-whole-archive -o cmTC_c9fd0.exe -Wl,--out-implib,libcmTC_c9fd0.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_c9fd0.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ton0um'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CheckIncludeFiles.cmake:184 (try_compile)"
+      - "external/freeglut/CMakeLists.txt:394 (CHECK_INCLUDE_FILES)"
+    checks:
+      - "Looking for include file inttypes.h"
+    directories:
+      source: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zyr553"
+      binary: "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zyr553"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -Wall -pedantic"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_INTTYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zyr553'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 "D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_dd352/fast
+        D:/CLion 2026.2.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_dd352.dir\\build.make CMakeFiles/cmTC_dd352.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zyr553'
+        Building C object CMakeFiles/cmTC_dd352.dir/HAVE_INTTYPES_H.c.obj
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"   -Wall -pedantic  -o CMakeFiles\\cmTC_dd352.dir\\HAVE_INTTYPES_H.c.obj -c C:\\Users\\vladk\\CLionProjects\\untitled\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-zyr553\\HAVE_INTTYPES_H.c
+        Linking C executable cmTC_dd352.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_dd352.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_dd352.dir/objects.a
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_dd352.dir/objects.a @CMakeFiles\\cmTC_dd352.dir\\objects1.rsp
+        "D:\\CLion 2026.2.2\\bin\\mingw\\bin\\gcc.exe"  -Wall -pedantic  -Wl,--whole-archive CMakeFiles\\cmTC_dd352.dir/objects.a -Wl,--no-whole-archive -o cmTC_dd352.exe -Wl,--out-implib,libcmTC_dd352.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_dd352.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zyr553'
+        
+      exitCode: 0
+...

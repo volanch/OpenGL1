@@ -1,16 +1,20 @@
-#for macOS and Linux
 BUILD_DIR := build
 
-.PHONY: all build run-robot_controller clean
+.PHONY: all build clean run-part1 run-part2
 
 all: build
+	@cp -f $(BUILD_DIR)/part1 . 2>/dev/null || cp -f $(BUILD_DIR)/part1.exe . 2>/dev/null || true
+	@cp -f $(BUILD_DIR)/part2 . 2>/dev/null || cp -f $(BUILD_DIR)/part2.exe . 2>/dev/null || true
 
 build:
 	cmake -S . -B $(BUILD_DIR) -DCMAKE_BUILD_TYPE=Release
 	cmake --build $(BUILD_DIR) --config Release
 
-run-robot_controller: build
-	cd $(BUILD_DIR) && ./robot_controller
+run-part1: all
+	./part1
+
+run-part2: all
+	./part2
 
 clean:
-	rm -rf $(BUILD_DIR)
+	rm -rf $(BUILD_DIR) part1 part1.exe part2 part2.exe

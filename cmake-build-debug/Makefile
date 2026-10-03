@@ -66,8 +66,8 @@ CMAKE_BINARY_DIR = C:\Users\vladk\CLionProjects\untitled\cmake-build-debug
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	"D:\CLion 2026.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
+	"C:\Program Files\CMake\bin\cmake-gui.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -86,7 +86,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Devel\" \"Unspecified\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -161,56 +161,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named robot_controller
+# Target rules for targets named part1
 
 # Build rule for target.
-robot_controller: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 robot_controller
-.PHONY : robot_controller
+part1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 part1
+.PHONY : part1
 
 # fast build rule for target.
-robot_controller/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/build
-.PHONY : robot_controller/fast
+part1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part1.dir\build.make CMakeFiles/part1.dir/build
+.PHONY : part1/fast
 
 #=============================================================================
-# Target rules for targets named uninstall
+# Target rules for targets named part2
 
 # Build rule for target.
-uninstall: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 uninstall
-.PHONY : uninstall
+part2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 part2
+.PHONY : part2
 
 # fast build rule for target.
-uninstall/fast:
-	$(MAKE) $(MAKESILENT) -f _deps\glfw-build\CMakeFiles\uninstall.dir\build.make _deps/glfw-build/CMakeFiles/uninstall.dir/build
-.PHONY : uninstall/fast
-
-#=============================================================================
-# Target rules for targets named glfw
-
-# Build rule for target.
-glfw: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 glfw
-.PHONY : glfw
-
-# fast build rule for target.
-glfw/fast:
-	$(MAKE) $(MAKESILENT) -f _deps\glfw-build\src\CMakeFiles\glfw.dir\build.make _deps/glfw-build/src/CMakeFiles/glfw.dir/build
-.PHONY : glfw/fast
-
-#=============================================================================
-# Target rules for targets named update_mappings
-
-# Build rule for target.
-update_mappings: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 update_mappings
-.PHONY : update_mappings
-
-# fast build rule for target.
-update_mappings/fast:
-	$(MAKE) $(MAKESILENT) -f _deps\glfw-build\src\CMakeFiles\update_mappings.dir\build.make _deps/glfw-build/src/CMakeFiles/update_mappings.dir/build
-.PHONY : update_mappings/fast
+part2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part2.dir\build.make CMakeFiles/part2.dir/build
+.PHONY : part2/fast
 
 #=============================================================================
 # Target rules for targets named glm
@@ -225,36 +199,26 @@ glm/fast:
 	$(MAKE) $(MAKESILENT) -f _deps\glm-build\glm\CMakeFiles\glm.dir\build.make _deps/glm-build/glm/CMakeFiles/glm.dir/build
 .PHONY : glm/fast
 
-Source_Files/EBO.obj: Source_Files/EBO.cpp.obj
-.PHONY : Source_Files/EBO.obj
+#=============================================================================
+# Target rules for targets named freeglut_static
 
-# target to build an object file
-Source_Files/EBO.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/Source_Files/EBO.cpp.obj
-.PHONY : Source_Files/EBO.cpp.obj
+# Build rule for target.
+freeglut_static: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 freeglut_static
+.PHONY : freeglut_static
 
-Source_Files/EBO.i: Source_Files/EBO.cpp.i
-.PHONY : Source_Files/EBO.i
-
-# target to preprocess a source file
-Source_Files/EBO.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/Source_Files/EBO.cpp.i
-.PHONY : Source_Files/EBO.cpp.i
-
-Source_Files/EBO.s: Source_Files/EBO.cpp.s
-.PHONY : Source_Files/EBO.s
-
-# target to generate assembly for a file
-Source_Files/EBO.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/Source_Files/EBO.cpp.s
-.PHONY : Source_Files/EBO.cpp.s
+# fast build rule for target.
+freeglut_static/fast:
+	$(MAKE) $(MAKESILENT) -f external\freeglut\CMakeFiles\freeglut_static.dir\build.make external/freeglut/CMakeFiles/freeglut_static.dir/build
+.PHONY : freeglut_static/fast
 
 Source_Files/VAO.obj: Source_Files/VAO.cpp.obj
 .PHONY : Source_Files/VAO.obj
 
 # target to build an object file
 Source_Files/VAO.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/Source_Files/VAO.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part1.dir\build.make CMakeFiles/part1.dir/Source_Files/VAO.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part2.dir\build.make CMakeFiles/part2.dir/Source_Files/VAO.cpp.obj
 .PHONY : Source_Files/VAO.cpp.obj
 
 Source_Files/VAO.i: Source_Files/VAO.cpp.i
@@ -262,7 +226,8 @@ Source_Files/VAO.i: Source_Files/VAO.cpp.i
 
 # target to preprocess a source file
 Source_Files/VAO.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/Source_Files/VAO.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part1.dir\build.make CMakeFiles/part1.dir/Source_Files/VAO.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part2.dir\build.make CMakeFiles/part2.dir/Source_Files/VAO.cpp.i
 .PHONY : Source_Files/VAO.cpp.i
 
 Source_Files/VAO.s: Source_Files/VAO.cpp.s
@@ -270,7 +235,8 @@ Source_Files/VAO.s: Source_Files/VAO.cpp.s
 
 # target to generate assembly for a file
 Source_Files/VAO.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/Source_Files/VAO.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part1.dir\build.make CMakeFiles/part1.dir/Source_Files/VAO.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part2.dir\build.make CMakeFiles/part2.dir/Source_Files/VAO.cpp.s
 .PHONY : Source_Files/VAO.cpp.s
 
 Source_Files/VBO.obj: Source_Files/VBO.cpp.obj
@@ -278,7 +244,8 @@ Source_Files/VBO.obj: Source_Files/VBO.cpp.obj
 
 # target to build an object file
 Source_Files/VBO.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/Source_Files/VBO.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part1.dir\build.make CMakeFiles/part1.dir/Source_Files/VBO.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part2.dir\build.make CMakeFiles/part2.dir/Source_Files/VBO.cpp.obj
 .PHONY : Source_Files/VBO.cpp.obj
 
 Source_Files/VBO.i: Source_Files/VBO.cpp.i
@@ -286,7 +253,8 @@ Source_Files/VBO.i: Source_Files/VBO.cpp.i
 
 # target to preprocess a source file
 Source_Files/VBO.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/Source_Files/VBO.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part1.dir\build.make CMakeFiles/part1.dir/Source_Files/VBO.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part2.dir\build.make CMakeFiles/part2.dir/Source_Files/VBO.cpp.i
 .PHONY : Source_Files/VBO.cpp.i
 
 Source_Files/VBO.s: Source_Files/VBO.cpp.s
@@ -294,7 +262,8 @@ Source_Files/VBO.s: Source_Files/VBO.cpp.s
 
 # target to generate assembly for a file
 Source_Files/VBO.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/Source_Files/VBO.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part1.dir\build.make CMakeFiles/part1.dir/Source_Files/VBO.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part2.dir\build.make CMakeFiles/part2.dir/Source_Files/VBO.cpp.s
 .PHONY : Source_Files/VBO.cpp.s
 
 Source_Files/shaderClass.obj: Source_Files/shaderClass.cpp.obj
@@ -302,7 +271,8 @@ Source_Files/shaderClass.obj: Source_Files/shaderClass.cpp.obj
 
 # target to build an object file
 Source_Files/shaderClass.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/Source_Files/shaderClass.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part1.dir\build.make CMakeFiles/part1.dir/Source_Files/shaderClass.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part2.dir\build.make CMakeFiles/part2.dir/Source_Files/shaderClass.cpp.obj
 .PHONY : Source_Files/shaderClass.cpp.obj
 
 Source_Files/shaderClass.i: Source_Files/shaderClass.cpp.i
@@ -310,7 +280,8 @@ Source_Files/shaderClass.i: Source_Files/shaderClass.cpp.i
 
 # target to preprocess a source file
 Source_Files/shaderClass.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/Source_Files/shaderClass.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part1.dir\build.make CMakeFiles/part1.dir/Source_Files/shaderClass.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part2.dir\build.make CMakeFiles/part2.dir/Source_Files/shaderClass.cpp.i
 .PHONY : Source_Files/shaderClass.cpp.i
 
 Source_Files/shaderClass.s: Source_Files/shaderClass.cpp.s
@@ -318,39 +289,65 @@ Source_Files/shaderClass.s: Source_Files/shaderClass.cpp.s
 
 # target to generate assembly for a file
 Source_Files/shaderClass.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/Source_Files/shaderClass.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part1.dir\build.make CMakeFiles/part1.dir/Source_Files/shaderClass.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part2.dir\build.make CMakeFiles/part2.dir/Source_Files/shaderClass.cpp.s
 .PHONY : Source_Files/shaderClass.cpp.s
 
-robot_controller.obj: robot_controller.cpp.obj
-.PHONY : robot_controller.obj
+part1.obj: part1.cpp.obj
+.PHONY : part1.obj
 
 # target to build an object file
-robot_controller.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/robot_controller.cpp.obj
-.PHONY : robot_controller.cpp.obj
+part1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part1.dir\build.make CMakeFiles/part1.dir/part1.cpp.obj
+.PHONY : part1.cpp.obj
 
-robot_controller.i: robot_controller.cpp.i
-.PHONY : robot_controller.i
+part1.i: part1.cpp.i
+.PHONY : part1.i
 
 # target to preprocess a source file
-robot_controller.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/robot_controller.cpp.i
-.PHONY : robot_controller.cpp.i
+part1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part1.dir\build.make CMakeFiles/part1.dir/part1.cpp.i
+.PHONY : part1.cpp.i
 
-robot_controller.s: robot_controller.cpp.s
-.PHONY : robot_controller.s
+part1.s: part1.cpp.s
+.PHONY : part1.s
 
 # target to generate assembly for a file
-robot_controller.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/robot_controller.cpp.s
-.PHONY : robot_controller.cpp.s
+part1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part1.dir\build.make CMakeFiles/part1.dir/part1.cpp.s
+.PHONY : part1.cpp.s
+
+part2.obj: part2.cpp.obj
+.PHONY : part2.obj
+
+# target to build an object file
+part2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part2.dir\build.make CMakeFiles/part2.dir/part2.cpp.obj
+.PHONY : part2.cpp.obj
+
+part2.i: part2.cpp.i
+.PHONY : part2.i
+
+# target to preprocess a source file
+part2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part2.dir\build.make CMakeFiles/part2.dir/part2.cpp.i
+.PHONY : part2.cpp.i
+
+part2.s: part2.cpp.s
+.PHONY : part2.s
+
+# target to generate assembly for a file
+part2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part2.dir\build.make CMakeFiles/part2.dir/part2.cpp.s
+.PHONY : part2.cpp.s
 
 src/glad.obj: src/glad.c.obj
 .PHONY : src/glad.obj
 
 # target to build an object file
 src/glad.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/src/glad.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part1.dir\build.make CMakeFiles/part1.dir/src/glad.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part2.dir\build.make CMakeFiles/part2.dir/src/glad.c.obj
 .PHONY : src/glad.c.obj
 
 src/glad.i: src/glad.c.i
@@ -358,7 +355,8 @@ src/glad.i: src/glad.c.i
 
 # target to preprocess a source file
 src/glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/src/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part1.dir\build.make CMakeFiles/part1.dir/src/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part2.dir\build.make CMakeFiles/part2.dir/src/glad.c.i
 .PHONY : src/glad.c.i
 
 src/glad.s: src/glad.c.s
@@ -366,7 +364,8 @@ src/glad.s: src/glad.c.s
 
 # target to generate assembly for a file
 src/glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\robot_controller.dir\build.make CMakeFiles/robot_controller.dir/src/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part1.dir\build.make CMakeFiles/part1.dir/src/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part2.dir\build.make CMakeFiles/part2.dir/src/glad.c.s
 .PHONY : src/glad.c.s
 
 # Help Target
@@ -381,14 +380,10 @@ help:
 	@echo ... install/strip
 	@echo ... list_install_components
 	@echo ... rebuild_cache
-	@echo ... uninstall
-	@echo ... update_mappings
-	@echo ... glfw
+	@echo ... freeglut_static
 	@echo ... glm
-	@echo ... robot_controller
-	@echo ... Source_Files/EBO.obj
-	@echo ... Source_Files/EBO.i
-	@echo ... Source_Files/EBO.s
+	@echo ... part1
+	@echo ... part2
 	@echo ... Source_Files/VAO.obj
 	@echo ... Source_Files/VAO.i
 	@echo ... Source_Files/VAO.s
@@ -398,9 +393,12 @@ help:
 	@echo ... Source_Files/shaderClass.obj
 	@echo ... Source_Files/shaderClass.i
 	@echo ... Source_Files/shaderClass.s
-	@echo ... robot_controller.obj
-	@echo ... robot_controller.i
-	@echo ... robot_controller.s
+	@echo ... part1.obj
+	@echo ... part1.i
+	@echo ... part1.s
+	@echo ... part2.obj
+	@echo ... part2.i
+	@echo ... part2.s
 	@echo ... src/glad.obj
 	@echo ... src/glad.i
 	@echo ... src/glad.s

@@ -5,6 +5,7 @@
 #ifndef COMPUTERGRAPHICSPROJECT_SHADERCLASS_H
 #define COMPUTERGRAPHICSPROJECT_SHADERCLASS_H
 #include<glad/glad.h>
+#include<glm/glm.hpp>
 #include<string>
 #include<fstream>
 #include<sstream>
@@ -21,6 +22,8 @@ public:
     void Activate();
     void Delete();
     void SetVec3(const char* name, float x, float y, float z);
+    void SetMat4(const char* name, const glm::mat4& m);
+    void SetVec3(const char* name, const glm::vec3& v);
 };
 
 #endif //COMPUTERGRAPHICSPROJECT_SHADERCLASS_H

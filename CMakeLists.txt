@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.25)
-project(ComputerGraphicsAssignment1 C CXX)
+set(CMAKE_POLICY_VERSION_MINIMUM 3.5)
+
+project(ComputerGraphicsAssignment2 C CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -7,43 +9,54 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 include(FetchContent)
 
 FetchContent_Declare(
-        glfw
-        URL https://github.com/glfw/glfw/releases/download/3.4/glfw-3.4.zip
-)
-
-FetchContent_MakeAvailable(glfw)
-
-FetchContent_Declare(
         glm
-        GIT_REPOSITORY https://github.com/g-truc/glm.git
-        GIT_TAG 1.0.1
+        URL https://github.com/g-truc/glm/archive/refs/tags/1.0.1.zip
 )
 FetchContent_MakeAvailable(glm)
 
-set(COMMON_SOURCES
-        src/glad.c
-        robot_controller.cpp
-        Header/shaderClass.h
-        "Source Files/shaderClass.cpp"
-        Header/VBO.h
-        "Source Files/VBO.cpp"
-        Header/EBO.h
-        "Source Files/EBO.cpp"
-        Header/VAO.h
-        "Source Files/VAO.cpp"
-        Header/shapeGen.h
+# FreeGLUT configuration
+if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/external/freeglut/CMakeLists.txt")
+    set(FREEGLUT_BUILD_DEMOS OFF CACHE BOOL "" FORCE)
+    set(FREEGLUT_BUILD_SHARED_LIBS OFF CACHE BOOL "" FORCE)
+    set(FREEGLUT_BUILD_STATIC_LIBS ON CACHE BOOL "" FORCE)
+    set(FREEGLUT_REPLACE_GLUT ON CACHE BOOL "" FORCE)
+    add_subdirectory(external/freeglut EXCLUDE_FROM_ALL)
+    set(GLUT_TARGET freeglut_static)
+    set(GLUT_INCLUDE_DIRS "${CMAKE_CURRENT_SOURCE_DIR}/external/freeglut/include")
+else()
+    find_package(GLUT REQUIRED)
+    set(GLUT_TARGET GLUT::GLUT)
+    set(GLUT_INCLUDE_DIRS ${GLUT_INCLUDE_DIRS})
+endif()
+
+include_directories(
+        include
+        Header
+        ${GLUT_INCLUDE_DIRS}
 )
 
-function(add_task_executable NAME SOURCE_FILE)
-    add_executable(${NAME} ${SOURCE_FILE} ${COMMON_SOURCES})
-    target_include_directories(${NAME} PRIVATE include Header)
-    target_link_libraries(${NAME} PRIVATE glfw glm)
-endfunction()
+# Part 1 executable
+add_executable(part1
+        part1.cpp
+        "Source Files/shaderClass.cpp"
+        "Source Files/VBO.cpp"
+        "Source Files/VAO.cpp"
+        src/glad.c)
+target_include_directories(part1 PRIVATE include Header ${GLUT_INCLUDE_DIRS})
+target_link_libraries(part1 PRIVATE ${GLUT_TARGET} glm)
 
-add_task_executable(robot_controller robot_controller.cpp)
+# Part 2 executable
+add_executable(part2
+        part2.cpp
+        "Source Files/shaderClass.cpp"
+        "Source Files/VBO.cpp"
+        "Source Files/VAO.cpp"
+        src/glad.c)
+target_include_directories(part2 PRIVATE include Header ${GLUT_INCLUDE_DIRS})
+target_link_libraries(part2 PRIVATE ${GLUT_TARGET} glm)
 
-# Copy the GLSL shader files next to every built executable
-file(GLOB SHADER_FILES
-        "${CMAKE_SOURCE_DIR}/Resource Files/Shaders/*.vert"
-        "${CMAKE_SOURCE_DIR}/Resource Files/Shaders/*.frag")
-file(COPY ${SHADER_FILES} DESTINATION ${CMAKE_BINARY_DIR})
+foreach(t part1 part2)
+    add_custom_command(TARGET ${t} POST_BUILD
+            COMMAND ${CMAKE_COMMAND} -E copy_directory
+            "${CMAKE_SOURCE_DIR}/Resource Files/shaders" $<TARGET_FILE_DIR:${t}>/shaders)
+endforeach()

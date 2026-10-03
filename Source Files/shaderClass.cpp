@@ -1,4 +1,5 @@
 #include"shaderClass.h"
+#include<glm/gtc/type_ptr.hpp>
 
 std::string get_file_contents(const char* filename) {
     std::ifstream in(filename, std::ios::binary);
@@ -49,4 +50,11 @@ void Shader::Delete() {
 
 void Shader::SetVec3(const char* name, float x, float y, float z) {
     glUniform3f(glGetUniformLocation(ID, name), x, y, z);
+}
+
+void Shader::SetMat4(const char* name, const glm::mat4& m) {
+    glUniformMatrix4fv(glGetUniformLocation(ID, name), 1, GL_FALSE, glm::value_ptr(m));
+}
+void Shader::SetVec3(const char* name, const glm::vec3& v) {
+    glUniform3f(glGetUniformLocation(ID, name), v.x, v.y, v.z);
 }

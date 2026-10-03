@@ -16,18 +16,10 @@ unset(ENV{CMAKE_TOOLCHAIN_FILE})
 project(glm-populate NONE)
 
 
-# Pass through things we've already detected in the main project to avoid
-# paying the cost of redetecting them again in ExternalProject_Add()
-set(GIT_EXECUTABLE [==[C:/Program Files/Git/cmd/git.exe]==])
-set(Git_VERSION [==[2.45.1.windows.1]==])
-set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
-  [==[C:/Program Files/Git/cmd/git.exe;2.45.1.windows.1]==]
-)
-
 
 include(ExternalProject)
 ExternalProject_Add(glm-populate
-                     "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/g-truc/glm.git" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "GIT_TAG" "1.0.1"
+                     "UPDATE_DISCONNECTED" "False" "DOWNLOAD_EXTRACT_TIMESTAMP" "FALSE" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "URL" "https://github.com/g-truc/glm/archive/refs/tags/1.0.1.zip"
                     SOURCE_DIR          "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/_deps/glm-src"
                     BINARY_DIR          "C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/_deps/glm-build"
                     CONFIGURE_COMMAND   ""
