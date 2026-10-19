@@ -24,6 +24,10 @@ public:
     void SetVec3(const char* name, float x, float y, float z);
     void SetMat4(const char* name, const glm::mat4& m);
     void SetVec3(const char* name, const glm::vec3& v);
+    void SetVec4(const char* name, const glm::vec4& v);
+    void SetMat3(const char* name, const glm::mat3& m);
+    void SetFloat(const char* name, float value);
+    void SetInt(const char* name, int value);
 };
 
 #endif //COMPUTERGRAPHICSPROJECT_SHADERCLASS_H

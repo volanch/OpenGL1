@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.25)
 set(CMAKE_POLICY_VERSION_MINIMUM 3.5)
 
-project(ComputerGraphicsAssignment2 C CXX)
+project(ComputerGraphicsAssignment3 C CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -14,49 +14,51 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(glm)
 
-# FreeGLUT configuration
+set(FREEGLUT_BUILD_DEMOS OFF CACHE BOOL "" FORCE)
+set(FREEGLUT_BUILD_SHARED_LIBS OFF CACHE BOOL "" FORCE)
+set(FREEGLUT_BUILD_STATIC_LIBS ON CACHE BOOL "" FORCE)
+
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/external/freeglut/CMakeLists.txt")
-    set(FREEGLUT_BUILD_DEMOS OFF CACHE BOOL "" FORCE)
-    set(FREEGLUT_BUILD_SHARED_LIBS OFF CACHE BOOL "" FORCE)
-    set(FREEGLUT_BUILD_STATIC_LIBS ON CACHE BOOL "" FORCE)
-    set(FREEGLUT_REPLACE_GLUT ON CACHE BOOL "" FORCE)
     add_subdirectory(external/freeglut EXCLUDE_FROM_ALL)
     set(GLUT_TARGET freeglut_static)
     set(GLUT_INCLUDE_DIRS "${CMAKE_CURRENT_SOURCE_DIR}/external/freeglut/include")
 else()
-    find_package(GLUT REQUIRED)
-    set(GLUT_TARGET GLUT::GLUT)
-    set(GLUT_INCLUDE_DIRS ${GLUT_INCLUDE_DIRS})
+    if(NOT WIN32)
+        find_package(GLUT QUIET)
+    endif()
+    if(GLUT_FOUND)
+        set(GLUT_TARGET GLUT::GLUT)
+    else()
+        FetchContent_Declare(
+                freeglut
+                URL https://github.com/FreeGLUTProject/freeglut/releases/download/v3.8.0/freeglut-3.8.0.tar.gz
+        )
+        FetchContent_MakeAvailable(freeglut)
+        set(GLUT_TARGET freeglut_static)
+        set(GLUT_INCLUDE_DIRS "${freeglut_SOURCE_DIR}/include")
+    endif()
 endif()
 
-include_directories(
-        include
-        Header
-        ${GLUT_INCLUDE_DIRS}
-)
-
-# Part 1 executable
-add_executable(part1
-        part1.cpp
+add_executable(assignment3
+        assignment3.cpp
         "Source Files/shaderClass.cpp"
         "Source Files/VBO.cpp"
         "Source Files/VAO.cpp"
+        "Source Files/smfLoader.cpp"
+        "Source Files/modelData.cpp"
         src/glad.c)
-target_include_directories(part1 PRIVATE include Header ${GLUT_INCLUDE_DIRS})
-target_link_libraries(part1 PRIVATE ${GLUT_TARGET} glm)
+target_include_directories(assignment3 PRIVATE include Header ${GLUT_INCLUDE_DIRS})
+if(GLUT_TARGET STREQUAL "freeglut_static")
+    target_compile_definitions(assignment3 PRIVATE FREEGLUT_STATIC)
+endif()
+target_link_libraries(assignment3 PRIVATE ${GLUT_TARGET} glm)
 
-# Part 2 executable
-add_executable(part2
-        part2.cpp
-        "Source Files/shaderClass.cpp"
-        "Source Files/VBO.cpp"
-        "Source Files/VAO.cpp"
-        src/glad.c)
-target_include_directories(part2 PRIVATE include Header ${GLUT_INCLUDE_DIRS})
-target_link_libraries(part2 PRIVATE ${GLUT_TARGET} glm)
+if(MINGW)
+    target_link_options(assignment3 PRIVATE -mconsole)
+endif()
 
-foreach(t part1 part2)
-    add_custom_command(TARGET ${t} POST_BUILD
-            COMMAND ${CMAKE_COMMAND} -E copy_directory
-            "${CMAKE_SOURCE_DIR}/Resource Files/shaders" $<TARGET_FILE_DIR:${t}>/shaders)
-endforeach()
+add_custom_command(TARGET assignment3 POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_directory
+        "${CMAKE_SOURCE_DIR}/Resource Files/Shaders" "$<TARGET_FILE_DIR:assignment3>/shaders"
+        COMMAND ${CMAKE_COMMAND} -E copy_directory
+        "${CMAKE_SOURCE_DIR}/models" "$<TARGET_FILE_DIR:assignment3>/models")

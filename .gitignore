@@ -1,0 +1,4 @@
+build/
+cmake-build-*/
+shaders/
+external/freeglut/
