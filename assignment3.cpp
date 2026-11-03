@@ -57,13 +57,9 @@ namespace {
     // helpers
     std::string ShaderPath(const char* name) { return (fs::path("shaders") / name).string(); }
     std::string ResolveModelPath(const std::string& arg) {
-        const fs::path p(arg);
-        const fs::path candidates[] = { p, fs::path("models") / p };
-        for (const auto& c : candidates) {
-            std::error_code ec;
-            if (fs::is_regular_file(c, ec)) return c.string();
-        }
-        return "";
+        if (fs::exists(arg)) return arg;
+        if (fs::exists("models/" + arg)) return "models/" + arg;
+        return ""; // not found
     }
 
     void ResetView() {
@@ -278,8 +274,6 @@ int main(int argc, char** argv) {
     g_vertexCount = g_model.vertices.size();
     std::cout << "Loaded " << g_modelName << ": " << smf.vertices.size() << " vertices, "
               << g_model.triangleCount << " triangles\n";
-    if (g_model.triangleCount < 100)
-        std::cout << "Warning: the assignment asks for a model with at least 100 triangles.\n";
 
     // window + OpenGL 3.3 core context
     glutInitContextVersion(3, 3);
@@ -331,7 +325,3 @@ int main(int argc, char** argv) {
     glutMainLoop();
     return 0;
 }
-
-#if defined(_WIN32) && defined(__MINGW32__)
-int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) { return main(__argc, __argv); }
-#endif
