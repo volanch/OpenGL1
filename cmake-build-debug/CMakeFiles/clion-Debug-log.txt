@@ -28,6 +28,6 @@ CMake Deprecation Warning at external/freeglut/CMakeLists.txt:1 (CMAKE_MINIMUM_R
   to work with policies introduced by <max> or earlier.
 
 
--- Configuring done (0.7s)
+-- Configuring done (1.8s)
 -- Generating done (0.5s)
 -- Build files have been written to: C:/Users/vladk/CLionProjects/untitled/cmake-build-debug

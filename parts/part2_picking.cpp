@@ -20,6 +20,7 @@ namespace {
     Framebuffer pickFbo, msFbo;
     int winW = 800, winH = 600;
     bool antialias = true;
+    bool showPick = true;
 
     float frand() { return std::rand() / (float)RAND_MAX; }
 
@@ -33,8 +34,13 @@ namespace {
         for (int i = 0; i < NUM_OBJECTS; i++) {
             prog.setMat4("model", translate(offsets[i]));
             prog.setVec3("kd", colors[i]);
-            float id = (i + 1) / 255.0f;
-            prog.setVec3("pickColor", {id, id, id});
+            if (showPick) {
+                Vec3 visColors[3] = {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}};
+                prog.setVec3("pickColor", visColors[i]);
+            } else {
+                float id = (i + 1) / 255.0f;
+                prog.setVec3("pickColor", {id, id, id});
+            }
             objects[i].draw(GL_TRIANGLES);
         }
     }
@@ -52,7 +58,10 @@ namespace {
     }
 
     void display() {
-        if (antialias) {
+        if (showPick) {
+            Framebuffer::bindDefault();
+            drawScene(true);
+        } else if (antialias) {
             msFbo.bind();
             drawScene(false);
             msFbo.bindForRead();
@@ -90,7 +99,8 @@ namespace {
         if (key == 'a') {
             antialias = !antialias;
             glutSetWindowTitle(antialias ? "Picking + anti-aliasing: ON" : "Picking + anti-aliasing: OFF");
-        } else if (key == 'r') cam.reset();
+        } else if (key == 'p') showPick = !showPick;
+        else if (key == 'r') cam.reset();
         else if (key == 'z') cam.zoom(0.9f);
         else if (key == 'x') cam.zoom(1.1f);
         else if (key == 27) std::exit(0);
