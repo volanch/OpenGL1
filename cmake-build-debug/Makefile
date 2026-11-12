@@ -86,7 +86,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Devel\" \"Unspecified\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -161,95 +161,69 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named red_triangle
+# Target rules for targets named assignment4
 
 # Build rule for target.
-red_triangle: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 red_triangle
-.PHONY : red_triangle
+assignment4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 assignment4
+.PHONY : assignment4
 
 # fast build rule for target.
-red_triangle/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/build
-.PHONY : red_triangle/fast
+assignment4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/build
+.PHONY : assignment4/fast
 
 #=============================================================================
-# Target rules for targets named blue_square
+# Target rules for targets named part1_bezier
 
 # Build rule for target.
-blue_square: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 blue_square
-.PHONY : blue_square
+part1_bezier: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 part1_bezier
+.PHONY : part1_bezier
 
 # fast build rule for target.
-blue_square/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/build
-.PHONY : blue_square/fast
+part1_bezier/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part1_bezier.dir\build.make CMakeFiles/part1_bezier.dir/build
+.PHONY : part1_bezier/fast
 
 #=============================================================================
-# Target rules for targets named polygons_part1
+# Target rules for targets named part2_picking
 
 # Build rule for target.
-polygons_part1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 polygons_part1
-.PHONY : polygons_part1
+part2_picking: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 part2_picking
+.PHONY : part2_picking
 
 # fast build rule for target.
-polygons_part1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/build
-.PHONY : polygons_part1/fast
+part2_picking/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part2_picking.dir\build.make CMakeFiles/part2_picking.dir/build
+.PHONY : part2_picking/fast
 
 #=============================================================================
-# Target rules for targets named polygons_part2
+# Target rules for targets named part3a_texture_patch
 
 # Build rule for target.
-polygons_part2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 polygons_part2
-.PHONY : polygons_part2
+part3a_texture_patch: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 part3a_texture_patch
+.PHONY : part3a_texture_patch
 
 # fast build rule for target.
-polygons_part2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/build
-.PHONY : polygons_part2/fast
+part3a_texture_patch/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part3a_texture_patch.dir\build.make CMakeFiles/part3a_texture_patch.dir/build
+.PHONY : part3a_texture_patch/fast
 
 #=============================================================================
-# Target rules for targets named uninstall
+# Target rules for targets named part3b_procedural
 
 # Build rule for target.
-uninstall: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 uninstall
-.PHONY : uninstall
+part3b_procedural: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 part3b_procedural
+.PHONY : part3b_procedural
 
 # fast build rule for target.
-uninstall/fast:
-	$(MAKE) $(MAKESILENT) -f _deps\glfw-build\CMakeFiles\uninstall.dir\build.make _deps/glfw-build/CMakeFiles/uninstall.dir/build
-.PHONY : uninstall/fast
-
-#=============================================================================
-# Target rules for targets named glfw
-
-# Build rule for target.
-glfw: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 glfw
-.PHONY : glfw
-
-# fast build rule for target.
-glfw/fast:
-	$(MAKE) $(MAKESILENT) -f _deps\glfw-build\src\CMakeFiles\glfw.dir\build.make _deps/glfw-build/src/CMakeFiles/glfw.dir/build
-.PHONY : glfw/fast
-
-#=============================================================================
-# Target rules for targets named update_mappings
-
-# Build rule for target.
-update_mappings: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 update_mappings
-.PHONY : update_mappings
-
-# fast build rule for target.
-update_mappings/fast:
-	$(MAKE) $(MAKESILENT) -f _deps\glfw-build\src\CMakeFiles\update_mappings.dir\build.make _deps/glfw-build/src/CMakeFiles/update_mappings.dir/build
-.PHONY : update_mappings/fast
+part3b_procedural/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part3b_procedural.dir\build.make CMakeFiles/part3b_procedural.dir/build
+.PHONY : part3b_procedural/fast
 
 #=============================================================================
 # Target rules for targets named glm
@@ -264,48 +238,241 @@ glm/fast:
 	$(MAKE) $(MAKESILENT) -f _deps\glm-build\glm\CMakeFiles\glm.dir\build.make _deps/glm-build/glm/CMakeFiles/glm.dir/build
 .PHONY : glm/fast
 
-Source_Files/EBO.obj: Source_Files/EBO.cpp.obj
-.PHONY : Source_Files/EBO.obj
+#=============================================================================
+# Target rules for targets named freeglut_static
+
+# Build rule for target.
+freeglut_static: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 freeglut_static
+.PHONY : freeglut_static
+
+# fast build rule for target.
+freeglut_static/fast:
+	$(MAKE) $(MAKESILENT) -f external\freeglut\CMakeFiles\freeglut_static.dir\build.make external/freeglut/CMakeFiles/freeglut_static.dir/build
+.PHONY : freeglut_static/fast
+
+Source_Files/BezierPatch.obj: Source_Files/BezierPatch.cpp.obj
+.PHONY : Source_Files/BezierPatch.obj
 
 # target to build an object file
-Source_Files/EBO.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/Source_Files/EBO.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/Source_Files/EBO.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/Source_Files/EBO.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/Source_Files/EBO.cpp.obj
-.PHONY : Source_Files/EBO.cpp.obj
+Source_Files/BezierPatch.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/BezierPatch.cpp.obj
+.PHONY : Source_Files/BezierPatch.cpp.obj
 
-Source_Files/EBO.i: Source_Files/EBO.cpp.i
-.PHONY : Source_Files/EBO.i
+Source_Files/BezierPatch.i: Source_Files/BezierPatch.cpp.i
+.PHONY : Source_Files/BezierPatch.i
 
 # target to preprocess a source file
-Source_Files/EBO.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/Source_Files/EBO.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/Source_Files/EBO.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/Source_Files/EBO.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/Source_Files/EBO.cpp.i
-.PHONY : Source_Files/EBO.cpp.i
+Source_Files/BezierPatch.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/BezierPatch.cpp.i
+.PHONY : Source_Files/BezierPatch.cpp.i
 
-Source_Files/EBO.s: Source_Files/EBO.cpp.s
-.PHONY : Source_Files/EBO.s
+Source_Files/BezierPatch.s: Source_Files/BezierPatch.cpp.s
+.PHONY : Source_Files/BezierPatch.s
 
 # target to generate assembly for a file
-Source_Files/EBO.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/Source_Files/EBO.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/Source_Files/EBO.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/Source_Files/EBO.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/Source_Files/EBO.cpp.s
-.PHONY : Source_Files/EBO.cpp.s
+Source_Files/BezierPatch.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/BezierPatch.cpp.s
+.PHONY : Source_Files/BezierPatch.cpp.s
+
+Source_Files/Framebuffer.obj: Source_Files/Framebuffer.cpp.obj
+.PHONY : Source_Files/Framebuffer.obj
+
+# target to build an object file
+Source_Files/Framebuffer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/Framebuffer.cpp.obj
+.PHONY : Source_Files/Framebuffer.cpp.obj
+
+Source_Files/Framebuffer.i: Source_Files/Framebuffer.cpp.i
+.PHONY : Source_Files/Framebuffer.i
+
+# target to preprocess a source file
+Source_Files/Framebuffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/Framebuffer.cpp.i
+.PHONY : Source_Files/Framebuffer.cpp.i
+
+Source_Files/Framebuffer.s: Source_Files/Framebuffer.cpp.s
+.PHONY : Source_Files/Framebuffer.s
+
+# target to generate assembly for a file
+Source_Files/Framebuffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/Framebuffer.cpp.s
+.PHONY : Source_Files/Framebuffer.cpp.s
+
+Source_Files/MathUtils.obj: Source_Files/MathUtils.cpp.obj
+.PHONY : Source_Files/MathUtils.obj
+
+# target to build an object file
+Source_Files/MathUtils.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/MathUtils.cpp.obj
+.PHONY : Source_Files/MathUtils.cpp.obj
+
+Source_Files/MathUtils.i: Source_Files/MathUtils.cpp.i
+.PHONY : Source_Files/MathUtils.i
+
+# target to preprocess a source file
+Source_Files/MathUtils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/MathUtils.cpp.i
+.PHONY : Source_Files/MathUtils.cpp.i
+
+Source_Files/MathUtils.s: Source_Files/MathUtils.cpp.s
+.PHONY : Source_Files/MathUtils.s
+
+# target to generate assembly for a file
+Source_Files/MathUtils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/MathUtils.cpp.s
+.PHONY : Source_Files/MathUtils.cpp.s
+
+Source_Files/OrbitCamera.obj: Source_Files/OrbitCamera.cpp.obj
+.PHONY : Source_Files/OrbitCamera.obj
+
+# target to build an object file
+Source_Files/OrbitCamera.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/OrbitCamera.cpp.obj
+.PHONY : Source_Files/OrbitCamera.cpp.obj
+
+Source_Files/OrbitCamera.i: Source_Files/OrbitCamera.cpp.i
+.PHONY : Source_Files/OrbitCamera.i
+
+# target to preprocess a source file
+Source_Files/OrbitCamera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/OrbitCamera.cpp.i
+.PHONY : Source_Files/OrbitCamera.cpp.i
+
+Source_Files/OrbitCamera.s: Source_Files/OrbitCamera.cpp.s
+.PHONY : Source_Files/OrbitCamera.s
+
+# target to generate assembly for a file
+Source_Files/OrbitCamera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/OrbitCamera.cpp.s
+.PHONY : Source_Files/OrbitCamera.cpp.s
+
+Source_Files/PatchModel.obj: Source_Files/PatchModel.cpp.obj
+.PHONY : Source_Files/PatchModel.obj
+
+# target to build an object file
+Source_Files/PatchModel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/PatchModel.cpp.obj
+.PHONY : Source_Files/PatchModel.cpp.obj
+
+Source_Files/PatchModel.i: Source_Files/PatchModel.cpp.i
+.PHONY : Source_Files/PatchModel.i
+
+# target to preprocess a source file
+Source_Files/PatchModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/PatchModel.cpp.i
+.PHONY : Source_Files/PatchModel.cpp.i
+
+Source_Files/PatchModel.s: Source_Files/PatchModel.cpp.s
+.PHONY : Source_Files/PatchModel.s
+
+# target to generate assembly for a file
+Source_Files/PatchModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/PatchModel.cpp.s
+.PHONY : Source_Files/PatchModel.cpp.s
+
+Source_Files/PhongScene.obj: Source_Files/PhongScene.cpp.obj
+.PHONY : Source_Files/PhongScene.obj
+
+# target to build an object file
+Source_Files/PhongScene.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/PhongScene.cpp.obj
+.PHONY : Source_Files/PhongScene.cpp.obj
+
+Source_Files/PhongScene.i: Source_Files/PhongScene.cpp.i
+.PHONY : Source_Files/PhongScene.i
+
+# target to preprocess a source file
+Source_Files/PhongScene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/PhongScene.cpp.i
+.PHONY : Source_Files/PhongScene.cpp.i
+
+Source_Files/PhongScene.s: Source_Files/PhongScene.cpp.s
+.PHONY : Source_Files/PhongScene.s
+
+# target to generate assembly for a file
+Source_Files/PhongScene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/PhongScene.cpp.s
+.PHONY : Source_Files/PhongScene.cpp.s
+
+Source_Files/ShaderProgram.obj: Source_Files/ShaderProgram.cpp.obj
+.PHONY : Source_Files/ShaderProgram.obj
+
+# target to build an object file
+Source_Files/ShaderProgram.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/ShaderProgram.cpp.obj
+.PHONY : Source_Files/ShaderProgram.cpp.obj
+
+Source_Files/ShaderProgram.i: Source_Files/ShaderProgram.cpp.i
+.PHONY : Source_Files/ShaderProgram.i
+
+# target to preprocess a source file
+Source_Files/ShaderProgram.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/ShaderProgram.cpp.i
+.PHONY : Source_Files/ShaderProgram.cpp.i
+
+Source_Files/ShaderProgram.s: Source_Files/ShaderProgram.cpp.s
+.PHONY : Source_Files/ShaderProgram.s
+
+# target to generate assembly for a file
+Source_Files/ShaderProgram.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/ShaderProgram.cpp.s
+.PHONY : Source_Files/ShaderProgram.cpp.s
+
+Source_Files/Surfaces.obj: Source_Files/Surfaces.cpp.obj
+.PHONY : Source_Files/Surfaces.obj
+
+# target to build an object file
+Source_Files/Surfaces.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/Surfaces.cpp.obj
+.PHONY : Source_Files/Surfaces.cpp.obj
+
+Source_Files/Surfaces.i: Source_Files/Surfaces.cpp.i
+.PHONY : Source_Files/Surfaces.i
+
+# target to preprocess a source file
+Source_Files/Surfaces.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/Surfaces.cpp.i
+.PHONY : Source_Files/Surfaces.cpp.i
+
+Source_Files/Surfaces.s: Source_Files/Surfaces.cpp.s
+.PHONY : Source_Files/Surfaces.s
+
+# target to generate assembly for a file
+Source_Files/Surfaces.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/Surfaces.cpp.s
+.PHONY : Source_Files/Surfaces.cpp.s
+
+Source_Files/Texture.obj: Source_Files/Texture.cpp.obj
+.PHONY : Source_Files/Texture.obj
+
+# target to build an object file
+Source_Files/Texture.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/Texture.cpp.obj
+.PHONY : Source_Files/Texture.cpp.obj
+
+Source_Files/Texture.i: Source_Files/Texture.cpp.i
+.PHONY : Source_Files/Texture.i
+
+# target to preprocess a source file
+Source_Files/Texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/Texture.cpp.i
+.PHONY : Source_Files/Texture.cpp.i
+
+Source_Files/Texture.s: Source_Files/Texture.cpp.s
+.PHONY : Source_Files/Texture.s
+
+# target to generate assembly for a file
+Source_Files/Texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/Texture.cpp.s
+.PHONY : Source_Files/Texture.cpp.s
 
 Source_Files/VAO.obj: Source_Files/VAO.cpp.obj
 .PHONY : Source_Files/VAO.obj
 
 # target to build an object file
 Source_Files/VAO.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/Source_Files/VAO.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/Source_Files/VAO.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/Source_Files/VAO.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/Source_Files/VAO.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/VAO.cpp.obj
 .PHONY : Source_Files/VAO.cpp.obj
 
 Source_Files/VAO.i: Source_Files/VAO.cpp.i
@@ -313,10 +480,7 @@ Source_Files/VAO.i: Source_Files/VAO.cpp.i
 
 # target to preprocess a source file
 Source_Files/VAO.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/Source_Files/VAO.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/Source_Files/VAO.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/Source_Files/VAO.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/Source_Files/VAO.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/VAO.cpp.i
 .PHONY : Source_Files/VAO.cpp.i
 
 Source_Files/VAO.s: Source_Files/VAO.cpp.s
@@ -324,10 +488,7 @@ Source_Files/VAO.s: Source_Files/VAO.cpp.s
 
 # target to generate assembly for a file
 Source_Files/VAO.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/Source_Files/VAO.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/Source_Files/VAO.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/Source_Files/VAO.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/Source_Files/VAO.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/VAO.cpp.s
 .PHONY : Source_Files/VAO.cpp.s
 
 Source_Files/VBO.obj: Source_Files/VBO.cpp.obj
@@ -335,10 +496,7 @@ Source_Files/VBO.obj: Source_Files/VBO.cpp.obj
 
 # target to build an object file
 Source_Files/VBO.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/Source_Files/VBO.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/Source_Files/VBO.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/Source_Files/VBO.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/Source_Files/VBO.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/VBO.cpp.obj
 .PHONY : Source_Files/VBO.cpp.obj
 
 Source_Files/VBO.i: Source_Files/VBO.cpp.i
@@ -346,10 +504,7 @@ Source_Files/VBO.i: Source_Files/VBO.cpp.i
 
 # target to preprocess a source file
 Source_Files/VBO.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/Source_Files/VBO.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/Source_Files/VBO.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/Source_Files/VBO.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/Source_Files/VBO.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/VBO.cpp.i
 .PHONY : Source_Files/VBO.cpp.i
 
 Source_Files/VBO.s: Source_Files/VBO.cpp.s
@@ -357,21 +512,87 @@ Source_Files/VBO.s: Source_Files/VBO.cpp.s
 
 # target to generate assembly for a file
 Source_Files/VBO.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/Source_Files/VBO.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/Source_Files/VBO.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/Source_Files/VBO.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/Source_Files/VBO.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/VBO.cpp.s
 .PHONY : Source_Files/VBO.cpp.s
+
+Source_Files/VertexBuffer.obj: Source_Files/VertexBuffer.cpp.obj
+.PHONY : Source_Files/VertexBuffer.obj
+
+# target to build an object file
+Source_Files/VertexBuffer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/VertexBuffer.cpp.obj
+.PHONY : Source_Files/VertexBuffer.cpp.obj
+
+Source_Files/VertexBuffer.i: Source_Files/VertexBuffer.cpp.i
+.PHONY : Source_Files/VertexBuffer.i
+
+# target to preprocess a source file
+Source_Files/VertexBuffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/VertexBuffer.cpp.i
+.PHONY : Source_Files/VertexBuffer.cpp.i
+
+Source_Files/VertexBuffer.s: Source_Files/VertexBuffer.cpp.s
+.PHONY : Source_Files/VertexBuffer.s
+
+# target to generate assembly for a file
+Source_Files/VertexBuffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/VertexBuffer.cpp.s
+.PHONY : Source_Files/VertexBuffer.cpp.s
+
+Source_Files/Window.obj: Source_Files/Window.cpp.obj
+.PHONY : Source_Files/Window.obj
+
+# target to build an object file
+Source_Files/Window.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/Window.cpp.obj
+.PHONY : Source_Files/Window.cpp.obj
+
+Source_Files/Window.i: Source_Files/Window.cpp.i
+.PHONY : Source_Files/Window.i
+
+# target to preprocess a source file
+Source_Files/Window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/Window.cpp.i
+.PHONY : Source_Files/Window.cpp.i
+
+Source_Files/Window.s: Source_Files/Window.cpp.s
+.PHONY : Source_Files/Window.s
+
+# target to generate assembly for a file
+Source_Files/Window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/Window.cpp.s
+.PHONY : Source_Files/Window.cpp.s
+
+Source_Files/modelData.obj: Source_Files/modelData.cpp.obj
+.PHONY : Source_Files/modelData.obj
+
+# target to build an object file
+Source_Files/modelData.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/modelData.cpp.obj
+.PHONY : Source_Files/modelData.cpp.obj
+
+Source_Files/modelData.i: Source_Files/modelData.cpp.i
+.PHONY : Source_Files/modelData.i
+
+# target to preprocess a source file
+Source_Files/modelData.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/modelData.cpp.i
+.PHONY : Source_Files/modelData.cpp.i
+
+Source_Files/modelData.s: Source_Files/modelData.cpp.s
+.PHONY : Source_Files/modelData.s
+
+# target to generate assembly for a file
+Source_Files/modelData.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/modelData.cpp.s
+.PHONY : Source_Files/modelData.cpp.s
 
 Source_Files/shaderClass.obj: Source_Files/shaderClass.cpp.obj
 .PHONY : Source_Files/shaderClass.obj
 
 # target to build an object file
 Source_Files/shaderClass.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/Source_Files/shaderClass.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/Source_Files/shaderClass.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/Source_Files/shaderClass.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/Source_Files/shaderClass.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/shaderClass.cpp.obj
 .PHONY : Source_Files/shaderClass.cpp.obj
 
 Source_Files/shaderClass.i: Source_Files/shaderClass.cpp.i
@@ -379,10 +600,7 @@ Source_Files/shaderClass.i: Source_Files/shaderClass.cpp.i
 
 # target to preprocess a source file
 Source_Files/shaderClass.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/Source_Files/shaderClass.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/Source_Files/shaderClass.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/Source_Files/shaderClass.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/Source_Files/shaderClass.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/shaderClass.cpp.i
 .PHONY : Source_Files/shaderClass.cpp.i
 
 Source_Files/shaderClass.s: Source_Files/shaderClass.cpp.s
@@ -390,117 +608,135 @@ Source_Files/shaderClass.s: Source_Files/shaderClass.cpp.s
 
 # target to generate assembly for a file
 Source_Files/shaderClass.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/Source_Files/shaderClass.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/Source_Files/shaderClass.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/Source_Files/shaderClass.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/Source_Files/shaderClass.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/shaderClass.cpp.s
 .PHONY : Source_Files/shaderClass.cpp.s
 
-blue_square.obj: blue_square.cpp.obj
-.PHONY : blue_square.obj
+Source_Files/smfLoader.obj: Source_Files/smfLoader.cpp.obj
+.PHONY : Source_Files/smfLoader.obj
 
 # target to build an object file
-blue_square.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/blue_square.cpp.obj
-.PHONY : blue_square.cpp.obj
+Source_Files/smfLoader.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/smfLoader.cpp.obj
+.PHONY : Source_Files/smfLoader.cpp.obj
 
-blue_square.i: blue_square.cpp.i
-.PHONY : blue_square.i
+Source_Files/smfLoader.i: Source_Files/smfLoader.cpp.i
+.PHONY : Source_Files/smfLoader.i
 
 # target to preprocess a source file
-blue_square.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/blue_square.cpp.i
-.PHONY : blue_square.cpp.i
+Source_Files/smfLoader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/smfLoader.cpp.i
+.PHONY : Source_Files/smfLoader.cpp.i
 
-blue_square.s: blue_square.cpp.s
-.PHONY : blue_square.s
+Source_Files/smfLoader.s: Source_Files/smfLoader.cpp.s
+.PHONY : Source_Files/smfLoader.s
 
 # target to generate assembly for a file
-blue_square.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/blue_square.cpp.s
-.PHONY : blue_square.cpp.s
+Source_Files/smfLoader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/Source_Files/smfLoader.cpp.s
+.PHONY : Source_Files/smfLoader.cpp.s
 
-polygons_part1.obj: polygons_part1.cpp.obj
-.PHONY : polygons_part1.obj
+parts/part1_bezier.obj: parts/part1_bezier.cpp.obj
+.PHONY : parts/part1_bezier.obj
 
 # target to build an object file
-polygons_part1.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/polygons_part1.cpp.obj
-.PHONY : polygons_part1.cpp.obj
+parts/part1_bezier.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part1_bezier.dir\build.make CMakeFiles/part1_bezier.dir/parts/part1_bezier.cpp.obj
+.PHONY : parts/part1_bezier.cpp.obj
 
-polygons_part1.i: polygons_part1.cpp.i
-.PHONY : polygons_part1.i
+parts/part1_bezier.i: parts/part1_bezier.cpp.i
+.PHONY : parts/part1_bezier.i
 
 # target to preprocess a source file
-polygons_part1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/polygons_part1.cpp.i
-.PHONY : polygons_part1.cpp.i
+parts/part1_bezier.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part1_bezier.dir\build.make CMakeFiles/part1_bezier.dir/parts/part1_bezier.cpp.i
+.PHONY : parts/part1_bezier.cpp.i
 
-polygons_part1.s: polygons_part1.cpp.s
-.PHONY : polygons_part1.s
+parts/part1_bezier.s: parts/part1_bezier.cpp.s
+.PHONY : parts/part1_bezier.s
 
 # target to generate assembly for a file
-polygons_part1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/polygons_part1.cpp.s
-.PHONY : polygons_part1.cpp.s
+parts/part1_bezier.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part1_bezier.dir\build.make CMakeFiles/part1_bezier.dir/parts/part1_bezier.cpp.s
+.PHONY : parts/part1_bezier.cpp.s
 
-polygons_part2.obj: polygons_part2.cpp.obj
-.PHONY : polygons_part2.obj
+parts/part2_picking.obj: parts/part2_picking.cpp.obj
+.PHONY : parts/part2_picking.obj
 
 # target to build an object file
-polygons_part2.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/polygons_part2.cpp.obj
-.PHONY : polygons_part2.cpp.obj
+parts/part2_picking.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part2_picking.dir\build.make CMakeFiles/part2_picking.dir/parts/part2_picking.cpp.obj
+.PHONY : parts/part2_picking.cpp.obj
 
-polygons_part2.i: polygons_part2.cpp.i
-.PHONY : polygons_part2.i
+parts/part2_picking.i: parts/part2_picking.cpp.i
+.PHONY : parts/part2_picking.i
 
 # target to preprocess a source file
-polygons_part2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/polygons_part2.cpp.i
-.PHONY : polygons_part2.cpp.i
+parts/part2_picking.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part2_picking.dir\build.make CMakeFiles/part2_picking.dir/parts/part2_picking.cpp.i
+.PHONY : parts/part2_picking.cpp.i
 
-polygons_part2.s: polygons_part2.cpp.s
-.PHONY : polygons_part2.s
+parts/part2_picking.s: parts/part2_picking.cpp.s
+.PHONY : parts/part2_picking.s
 
 # target to generate assembly for a file
-polygons_part2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/polygons_part2.cpp.s
-.PHONY : polygons_part2.cpp.s
+parts/part2_picking.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part2_picking.dir\build.make CMakeFiles/part2_picking.dir/parts/part2_picking.cpp.s
+.PHONY : parts/part2_picking.cpp.s
 
-red_triangle.obj: red_triangle.cpp.obj
-.PHONY : red_triangle.obj
+parts/part3a_texture_patch.obj: parts/part3a_texture_patch.cpp.obj
+.PHONY : parts/part3a_texture_patch.obj
 
 # target to build an object file
-red_triangle.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/red_triangle.cpp.obj
-.PHONY : red_triangle.cpp.obj
+parts/part3a_texture_patch.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part3a_texture_patch.dir\build.make CMakeFiles/part3a_texture_patch.dir/parts/part3a_texture_patch.cpp.obj
+.PHONY : parts/part3a_texture_patch.cpp.obj
 
-red_triangle.i: red_triangle.cpp.i
-.PHONY : red_triangle.i
+parts/part3a_texture_patch.i: parts/part3a_texture_patch.cpp.i
+.PHONY : parts/part3a_texture_patch.i
 
 # target to preprocess a source file
-red_triangle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/red_triangle.cpp.i
-.PHONY : red_triangle.cpp.i
+parts/part3a_texture_patch.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part3a_texture_patch.dir\build.make CMakeFiles/part3a_texture_patch.dir/parts/part3a_texture_patch.cpp.i
+.PHONY : parts/part3a_texture_patch.cpp.i
 
-red_triangle.s: red_triangle.cpp.s
-.PHONY : red_triangle.s
+parts/part3a_texture_patch.s: parts/part3a_texture_patch.cpp.s
+.PHONY : parts/part3a_texture_patch.s
 
 # target to generate assembly for a file
-red_triangle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/red_triangle.cpp.s
-.PHONY : red_triangle.cpp.s
+parts/part3a_texture_patch.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part3a_texture_patch.dir\build.make CMakeFiles/part3a_texture_patch.dir/parts/part3a_texture_patch.cpp.s
+.PHONY : parts/part3a_texture_patch.cpp.s
+
+parts/part3b_procedural.obj: parts/part3b_procedural.cpp.obj
+.PHONY : parts/part3b_procedural.obj
+
+# target to build an object file
+parts/part3b_procedural.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part3b_procedural.dir\build.make CMakeFiles/part3b_procedural.dir/parts/part3b_procedural.cpp.obj
+.PHONY : parts/part3b_procedural.cpp.obj
+
+parts/part3b_procedural.i: parts/part3b_procedural.cpp.i
+.PHONY : parts/part3b_procedural.i
+
+# target to preprocess a source file
+parts/part3b_procedural.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part3b_procedural.dir\build.make CMakeFiles/part3b_procedural.dir/parts/part3b_procedural.cpp.i
+.PHONY : parts/part3b_procedural.cpp.i
+
+parts/part3b_procedural.s: parts/part3b_procedural.cpp.s
+.PHONY : parts/part3b_procedural.s
+
+# target to generate assembly for a file
+parts/part3b_procedural.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part3b_procedural.dir\build.make CMakeFiles/part3b_procedural.dir/parts/part3b_procedural.cpp.s
+.PHONY : parts/part3b_procedural.cpp.s
 
 src/glad.obj: src/glad.c.obj
 .PHONY : src/glad.obj
 
 # target to build an object file
 src/glad.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/src/glad.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/src/glad.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/src/glad.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/src/glad.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/src/glad.c.obj
 .PHONY : src/glad.c.obj
 
 src/glad.i: src/glad.c.i
@@ -508,10 +744,7 @@ src/glad.i: src/glad.c.i
 
 # target to preprocess a source file
 src/glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/src/glad.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/src/glad.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/src/glad.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/src/glad.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/src/glad.c.i
 .PHONY : src/glad.c.i
 
 src/glad.s: src/glad.c.s
@@ -519,10 +752,7 @@ src/glad.s: src/glad.c.s
 
 # target to generate assembly for a file
 src/glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_triangle.dir\build.make CMakeFiles/red_triangle.dir/src/glad.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\blue_square.dir\build.make CMakeFiles/blue_square.dir/src/glad.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part1.dir\build.make CMakeFiles/polygons_part1.dir/src/glad.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\polygons_part2.dir\build.make CMakeFiles/polygons_part2.dir/src/glad.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assignment4.dir\build.make CMakeFiles/assignment4.dir/src/glad.c.s
 .PHONY : src/glad.c.s
 
 # Help Target
@@ -537,38 +767,73 @@ help:
 	@echo ... install/strip
 	@echo ... list_install_components
 	@echo ... rebuild_cache
-	@echo ... uninstall
-	@echo ... update_mappings
-	@echo ... blue_square
-	@echo ... glfw
+	@echo ... assignment4
+	@echo ... freeglut_static
 	@echo ... glm
-	@echo ... polygons_part1
-	@echo ... polygons_part2
-	@echo ... red_triangle
-	@echo ... Source_Files/EBO.obj
-	@echo ... Source_Files/EBO.i
-	@echo ... Source_Files/EBO.s
+	@echo ... part1_bezier
+	@echo ... part2_picking
+	@echo ... part3a_texture_patch
+	@echo ... part3b_procedural
+	@echo ... Source_Files/BezierPatch.obj
+	@echo ... Source_Files/BezierPatch.i
+	@echo ... Source_Files/BezierPatch.s
+	@echo ... Source_Files/Framebuffer.obj
+	@echo ... Source_Files/Framebuffer.i
+	@echo ... Source_Files/Framebuffer.s
+	@echo ... Source_Files/MathUtils.obj
+	@echo ... Source_Files/MathUtils.i
+	@echo ... Source_Files/MathUtils.s
+	@echo ... Source_Files/OrbitCamera.obj
+	@echo ... Source_Files/OrbitCamera.i
+	@echo ... Source_Files/OrbitCamera.s
+	@echo ... Source_Files/PatchModel.obj
+	@echo ... Source_Files/PatchModel.i
+	@echo ... Source_Files/PatchModel.s
+	@echo ... Source_Files/PhongScene.obj
+	@echo ... Source_Files/PhongScene.i
+	@echo ... Source_Files/PhongScene.s
+	@echo ... Source_Files/ShaderProgram.obj
+	@echo ... Source_Files/ShaderProgram.i
+	@echo ... Source_Files/ShaderProgram.s
+	@echo ... Source_Files/Surfaces.obj
+	@echo ... Source_Files/Surfaces.i
+	@echo ... Source_Files/Surfaces.s
+	@echo ... Source_Files/Texture.obj
+	@echo ... Source_Files/Texture.i
+	@echo ... Source_Files/Texture.s
 	@echo ... Source_Files/VAO.obj
 	@echo ... Source_Files/VAO.i
 	@echo ... Source_Files/VAO.s
 	@echo ... Source_Files/VBO.obj
 	@echo ... Source_Files/VBO.i
 	@echo ... Source_Files/VBO.s
+	@echo ... Source_Files/VertexBuffer.obj
+	@echo ... Source_Files/VertexBuffer.i
+	@echo ... Source_Files/VertexBuffer.s
+	@echo ... Source_Files/Window.obj
+	@echo ... Source_Files/Window.i
+	@echo ... Source_Files/Window.s
+	@echo ... Source_Files/modelData.obj
+	@echo ... Source_Files/modelData.i
+	@echo ... Source_Files/modelData.s
 	@echo ... Source_Files/shaderClass.obj
 	@echo ... Source_Files/shaderClass.i
 	@echo ... Source_Files/shaderClass.s
-	@echo ... blue_square.obj
-	@echo ... blue_square.i
-	@echo ... blue_square.s
-	@echo ... polygons_part1.obj
-	@echo ... polygons_part1.i
-	@echo ... polygons_part1.s
-	@echo ... polygons_part2.obj
-	@echo ... polygons_part2.i
-	@echo ... polygons_part2.s
-	@echo ... red_triangle.obj
-	@echo ... red_triangle.i
-	@echo ... red_triangle.s
+	@echo ... Source_Files/smfLoader.obj
+	@echo ... Source_Files/smfLoader.i
+	@echo ... Source_Files/smfLoader.s
+	@echo ... parts/part1_bezier.obj
+	@echo ... parts/part1_bezier.i
+	@echo ... parts/part1_bezier.s
+	@echo ... parts/part2_picking.obj
+	@echo ... parts/part2_picking.i
+	@echo ... parts/part2_picking.s
+	@echo ... parts/part3a_texture_patch.obj
+	@echo ... parts/part3a_texture_patch.i
+	@echo ... parts/part3a_texture_patch.s
+	@echo ... parts/part3b_procedural.obj
+	@echo ... parts/part3b_procedural.i
+	@echo ... parts/part3b_procedural.s
 	@echo ... src/glad.obj
 	@echo ... src/glad.i
 	@echo ... src/glad.s

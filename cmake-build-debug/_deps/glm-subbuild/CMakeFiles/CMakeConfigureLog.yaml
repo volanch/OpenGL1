@@ -9,3 +9,10 @@ events:
     message: |
       The system is: Windows - 10.0.26200 - AMD64
 ...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "D:/CLion 2026.2.2/bin/cmake/win/x64/share/cmake-4.3/Modules/CMakeDetermineCompiler.cmake:63 (find_program)"

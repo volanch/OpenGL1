@@ -14,6 +14,15 @@
 # EXTERNAL cache entries
 ########################
 
+//Value Computed by CMake
+Assignment4_BINARY_DIR:STATIC=C:/Users/vladk/CLionProjects/untitled/cmake-build-debug
+
+//Value Computed by CMake
+Assignment4_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Assignment4_SOURCE_DIR:STATIC=C:/Users/vladk/CLionProjects/untitled
+
 //Build shared libraries
 BUILD_SHARED_LIBS:BOOL=OFF
 
@@ -208,7 +217,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=ComputerGraphicsAssignment1
+CMAKE_PROJECT_NAME:STATIC=ComputerGraphicsAssignment4
 
 //Value Computed by CMake
 CMAKE_PROJECT_SPDX_LICENSE:STATIC=
@@ -321,6 +330,15 @@ ComputerGraphicsAssignment1_IS_TOP_LEVEL:STATIC=ON
 ComputerGraphicsAssignment1_SOURCE_DIR:STATIC=C:/Users/vladk/CLionProjects/untitled
 
 //Value Computed by CMake
+ComputerGraphicsAssignment4_BINARY_DIR:STATIC=C:/Users/vladk/CLionProjects/untitled/cmake-build-debug
+
+//Value Computed by CMake
+ComputerGraphicsAssignment4_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+ComputerGraphicsAssignment4_SOURCE_DIR:STATIC=C:/Users/vladk/CLionProjects/untitled
+
+//Value Computed by CMake
 ComputerGraphicsProject_BINARY_DIR:STATIC=C:/Users/vladk/CLionProjects/untitled/cmake-build-debug
 
 //Value Computed by CMake
@@ -359,14 +377,53 @@ FETCHCONTENT_UPDATES_DISCONNECTED_GLFW:BOOL=OFF
 //Enables UPDATE_DISCONNECTED behavior just for population of glm
 FETCHCONTENT_UPDATES_DISCONNECTED_GLM:BOOL=OFF
 
+//Build FreeGLUT demos.
+FREEGLUT_BUILD_DEMOS:BOOL=OFF
+
+//Build FreeGLUT shared library.
+FREEGLUT_BUILD_SHARED_LIBS:BOOL=OFF
+
+//Build FreeGLUT static library.
+FREEGLUT_BUILD_STATIC_LIBS:BOOL=ON
+
+//Use OpenGL ES (requires EGL)
+FREEGLUT_GLES:BOOL=OFF
+
+//Lib prints errors to stderr
+FREEGLUT_PRINT_ERRORS:BOOL=ON
+
+//Lib prints warnings to stderr
+FREEGLUT_PRINT_WARNINGS:BOOL=ON
+
+//Be a replacement for GLUT
+FREEGLUT_REPLACE_GLUT:BOOL=OFF
+
 //Git command line client
 GIT_EXECUTABLE:FILEPATH=C:/Program Files/Git/cmd/git.exe
+
+//The directory containing a CMake configuration file for GLEW.
+GLEW_DIR:PATH=GLEW_DIR-NOTFOUND
+
+//Path to a file.
+GLEW_INCLUDE_DIR:PATH=GLEW_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+GLEW_SHARED_LIBRARY_DEBUG:FILEPATH=GLEW_SHARED_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+GLEW_SHARED_LIBRARY_RELEASE:FILEPATH=GLEW_SHARED_LIBRARY_RELEASE-NOTFOUND
+
+//Path to a library.
+GLEW_STATIC_LIBRARY_DEBUG:FILEPATH=GLEW_STATIC_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+GLEW_STATIC_LIBRARY_RELEASE:FILEPATH=GLEW_STATIC_LIBRARY_RELEASE-NOTFOUND
 
 //Value Computed by CMake
 GLFW_BINARY_DIR:STATIC=C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/_deps/glfw-build
 
 //Build the GLFW documentation
-GLFW_BUILD_DOCS:BOOL=ON
+GLFW_BUILD_DOCS:BOOL=OFF
 
 //Build the GLFW example programs
 GLFW_BUILD_EXAMPLES:BOOL=OFF
@@ -449,6 +506,39 @@ GLM_ENABLE_SIMD_SSSE3:BOOL=OFF
 
 //Force 'pure' instructions
 GLM_FORCE_PURE:BOOL=OFF
+
+//Path to a file.
+GLUT_INCLUDE_DIR:PATH=GLUT_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+GLUT_glut_LIBRARY_DEBUG:FILEPATH=GLUT_glut_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+GLUT_glut_LIBRARY_RELEASE:FILEPATH=GLUT_glut_LIBRARY_RELEASE-NOTFOUND
+
+//OpenGL library for win32
+OPENGL_gl_LIBRARY:STRING=opengl32
+
+//GLU library for win32
+OPENGL_glu_LIBRARY:STRING=glu32
+
+//Arguments to supply to pkg-config
+PKG_CONFIG_ARGN:STRING=
+
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=C:/msys64/ucrt64/bin/pkg-config.exe
+
+//Value Computed by CMake
+freeglut_BINARY_DIR:STATIC=C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/external/freeglut
+
+//Value Computed by CMake
+freeglut_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+freeglut_SOURCE_DIR:STATIC=C:/Users/vladk/CLionProjects/untitled/external/freeglut
+
+//Dependencies for the target
+freeglut_static_LIB_DEPENDS:STATIC=general;opengl32;general;winmm;general;gdi32;
 
 //Value Computed by CMake
 glm_BINARY_DIR:STATIC=C:/Users/vladk/CLionProjects/untitled/cmake-build-debug/_deps/glm-build
@@ -598,7 +688,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -658,16 +748,98 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 DINPUT_H_FOUND:INTERNAL=1
 //ADVANCED property for variable: DOXYGEN_EXECUTABLE
 DOXYGEN_EXECUTABLE-ADVANCED:INTERNAL=1
+//Details about finding OpenGL
+FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[opengl32][ ][v()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GLEW_INCLUDE_DIR
+GLEW_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GLEW_SHARED_LIBRARY_DEBUG
+GLEW_SHARED_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GLEW_SHARED_LIBRARY_RELEASE
+GLEW_SHARED_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GLEW_STATIC_LIBRARY_DEBUG
+GLEW_STATIC_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GLEW_STATIC_LIBRARY_RELEASE
+GLEW_STATIC_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//Build support for Wayland
+GLFW_BUILD_WAYLAND:INTERNAL=OFF
 //GLFW pkg-config Libs.private
 GLFW_PKG_CONFIG_LIBS_PRIVATE:INTERNAL= -lgdi32
 //GLFW pkg-config Requires.private
 GLFW_PKG_CONFIG_REQUIRES_PRIVATE:INTERNAL=
+//ADVANCED property for variable: GLUT_INCLUDE_DIR
+GLUT_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GLUT_glut_LIBRARY_DEBUG
+GLUT_glut_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GLUT_glut_LIBRARY_RELEASE
+GLUT_glut_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//Have include fcntl.h
+HAVE_FCNTL_H:INTERNAL=1
+//Have function gettimeofday
+HAVE_GETTIMEOFDAY:INTERNAL=1
+//Have include inttypes.h
+HAVE_INTTYPES_H:INTERNAL=1
+//Have include stdbool.h
+HAVE_STDBOOL_H:INTERNAL=1
+//Have include stdint.h
+HAVE_STDINT_H:INTERNAL=1
+//Have includes sys/ioctl.h
+HAVE_SYS_IOCTL_H:INTERNAL=
+//Have include sys/param.h
+HAVE_SYS_PARAM_H:INTERNAL=1
+//Have include sys/time.h
+HAVE_SYS_TIME_H:INTERNAL=1
+//Have include sys/types.h
+HAVE_SYS_TYPES_H:INTERNAL=1
+//Have include unistd.h
+HAVE_UNISTD_H:INTERNAL=1
+//Have includes usbhid.h
+HAVE_USBHID_H:INTERNAL=
+//Have function XParseGeometry
+HAVE_XPARSEGEOMETRY:INTERNAL=
+//ADVANCED property for variable: OPENGL_gl_LIBRARY
+OPENGL_gl_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_glu_LIBRARY
+OPENGL_glu_LIBRARY-ADVANCED:INTERNAL=1
+PC_GLUT_CFLAGS:INTERNAL=
+PC_GLUT_CFLAGS_I:INTERNAL=
+PC_GLUT_CFLAGS_OTHER:INTERNAL=
+PC_GLUT_FOUND:INTERNAL=
+PC_GLUT_INCLUDEDIR:INTERNAL=
+PC_GLUT_LIBDIR:INTERNAL=
+PC_GLUT_LIBS:INTERNAL=
+PC_GLUT_LIBS_L:INTERNAL=
+PC_GLUT_LIBS_OTHER:INTERNAL=
+PC_GLUT_LIBS_PATHS:INTERNAL=
+PC_GLUT_MODULE_NAME:INTERNAL=
+PC_GLUT_PREFIX:INTERNAL=
+PC_GLUT_STATIC_CFLAGS:INTERNAL=
+PC_GLUT_STATIC_CFLAGS_I:INTERNAL=
+PC_GLUT_STATIC_CFLAGS_OTHER:INTERNAL=
+PC_GLUT_STATIC_LIBDIR:INTERNAL=
+PC_GLUT_STATIC_LIBS:INTERNAL=
+PC_GLUT_STATIC_LIBS_L:INTERNAL=
+PC_GLUT_STATIC_LIBS_OTHER:INTERNAL=
+PC_GLUT_STATIC_LIBS_PATHS:INTERNAL=
+PC_GLUT_VERSION:INTERNAL=
+PC_GLUT_freeglut_INCLUDEDIR:INTERNAL=
+PC_GLUT_freeglut_LIBDIR:INTERNAL=
+PC_GLUT_freeglut_PREFIX:INTERNAL=
+PC_GLUT_freeglut_VERSION:INTERNAL=
+PC_GLUT_glut_INCLUDEDIR:INTERNAL=
+PC_GLUT_glut_LIBDIR:INTERNAL=
+PC_GLUT_glut_PREFIX:INTERNAL=
+PC_GLUT_glut_VERSION:INTERNAL=
+//ADVANCED property for variable: PKG_CONFIG_ARGN
+PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //Have include xinput.h
 XINPUT_H_FOUND:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/ComputerGraphicsProject
+__pkg_config_checked_PC_GLUT:INTERNAL=1
 

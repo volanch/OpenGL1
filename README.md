@@ -1,80 +1,78 @@
-# Assignment 1
+# Assignment 4 - Bezier Patch, Picking / Anti-aliasing, Texture Mapping
 
-**Student:** Kovernikov Vladislav
 **Course:** Computer Graphics Fundamentals
 **Instructor:** Saleshova Sabina
 
-## What this submission contains
+## Programs
 
-Four small OpenGL 3.3 programs, built on a shared set of
-GPU-object wrapper classes (`Shader`, `VAO`, `VBO`, `EBO`) and a shape-generator
-header. Everything is drawn through vertex buffers, a vertex array object,
-and GLSL shaders.
-
-| Program | Source file | Task | What it draws |
+| Program | Source | Assignment part | What it does |
 |---|---|---|---|
-| `red_triangle` | `red_triangle.cpp` | Task 1, Step 1 | Getting started example: an 800×800 window with a solid red triangle, drawn from 3 vertices with a single VBO. |
-| `blue_square` | `blue_square.cpp` | Task 1, Step 2 | `red_triangle` modified into a solid blue square, built from an indexed quad (2 triangles with an EBO). |
-| `polygons_part1` | `polygons_part1.cpp` | Task 2, Part 1 | A 500×500 window with a shaded circle (used `GL_TRIANGLE_FAN`), an solid ellipse, a 3‑colour triangle, and six black/white squares. |
-| `polygons_part2` | `polygons_part2.cpp` | Task 2, Part 2 | A sunset sky, a sun, two layered mountains, and a 5‑pointed star. |
+| `part1_bezier` | `parts/part1_bezier.cpp` | Part 1 | Flat-shaded bicubic Bezier patch (10x10 start), Phong diffuse per triangle, light attached to the camera, 16 control points as `GL_POINTS`, RGB axes, interactive control point editing and resolution change. |
+| `part2_picking` | `parts/part2_picking.cpp` | Part 2 | Three smooth-shaded meshes with colour-ID picking in an FBO, random diffuse colour on click, anti-aliasing toggle (4x multisampled FBO resolved with `glBlitFramebuffer`). |
+| `part3a_texture_patch` | `parts/part3a_texture_patch.cpp` | Part 3.1 | Assignment 3 program (Phong only, one glossy material) with a 2D procedural image texture on a 12x12 Bezier mesh. Texture coordinates = (u,v) of the vertex position. The texture colour replaces the constant diffuse colour in the fragment shader. |
+| `part3b_procedural` | `parts/part3b_procedural.cpp` | Part 3.2 | Assignment 3 program (Phong only, one glossy material) loading an SMF model with a 3D procedural veined-marble texture computed from world (x,y,z) in the fragment shader and used as the Phong diffuse colour. |
 
-All shapes are generated procedurally with parametric equations
-(`x = cx + r·cos(θ), y = cy + r·sin(θ)`) in `Header/shapeGen.h`, packed into
-a single interleaved vertex buffer per program (there {x, y, r, g, b} per vertex),
-and drawn with one `glDrawArrays/glDrawElements` call per shape. Per-vertex
-color is passed to `default.vert`/`default.frag` (or `solid.vert`/`solid.frag`
-for the solid figures).
+Part 3 extends the Assignment 3 code (cylindrical camera, two lights, parallel/perspective
+projection, SMF loader with smooth normals). It keeps only the Phong shading algorithm and
+the first material of Assignment 3 (glossy, with a specular highlight). The Gouraud shader
+and the material switching were removed.
 
-## Requirements
+## Libraries
 
-- CMake ≥ 3.25
-- A C++17 compiler (GCC, Clang, or MSVC)
-- An internet connection the *first* time you build — CMake's `FetchContent`
-  downloads GLFW 3.4 and GLM 1.0.1 automatically. GLAD is vendored in
-  `include/` and `src/glad.c`, so it does not need to be downloaded.
-- A GPU/driver with OpenGL 3.3 core-profile support and a display (all four
-  programs open a window; none of them run headless).
+- OpenGL 3.3 core profile
+- **freeglut** - window and input (fetched by CMake, or `external/freeglut` if present)
+- **glad** - OpenGL loader (`include/glad`, `include/KHR`, `src/glad.c`)
+- **GLM** - math for the Assignment 3 based code (fetched by CMake)
 
-## Build
+## Build and run
+
+CLion: open the folder, let CMake load, pick a target and press Run.
 
 ```bash
-make
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+cmake --build build --config Release
+cd build
+./part1_bezier
+./part3b_procedural bound-bunny_1k.smf     # model from the models folder, or a path
 ```
 
-This runs `cmake -S . -B build` followed by `cmake --build build`, producing
-four executables inside `build/`: `red_triangle`, `blue_square`,
-`polygons_part1`, and `polygons_part2`.
+The first configure needs internet (freeglut and GLM are downloaded).
+After each build `shaders/` and `models/` are copied next to the executable, so run it
+from that folder (CLion does this). `control_points.txt` in the project root is copied
+too and used by Part 1 and Part 3a; built-in points are used if it is missing.
 
-## Run
+## Controls
 
-```bash
-make run-red_triangle
-make run-blue_square
-make run-polygons_part1
-make run-polygons_part2
-```
+Part 1: drag / arrows rotate, `z` `x` zoom, `r` reset view, `c` reset control points, `n` `b` select point, `a` `d` / `s` `w` / `q` `e` move point -/+ in x / y / z, `+` `-` resolution.
 
-Close a window to exit.
+Part 2: left click random colour, right-drag / arrows rotate, `z` `x` zoom, `r` reset, `a` anti-aliasing on/off.
 
-If you are in Clion just select executable and run it.
+Part 3a and 3b (Assignment 3 controls):
 
-## Tested on
-
-Windows 11, CLion
+| Keys | Action |
+|---|---|
+| arrows | camera angle / height |
+| `+` `-` (PgUp/PgDn) | camera radius |
+| `a` `d` / `w` `s` / `e` `q` | light 1 angle / height / radius |
+| `p` | parallel / perspective |
+| `z` `x` | light 1 / light 2 on-off |
+| `u` | cylinder axis Z-up / Y-up |
+| `n` | flip normals |
+| `r` | reset, `Esc` quit |
 
 ## Project layout
 
 ```
-vk_a1/
-├── red_triangle.cpp
-├── blue_square.cpp
-├── polygons_part1.cpp
-├── polygons_part2.cpp
-├── CMakeLists.txt
-├── Makefile
-├── Header/                  Shader/VAO/VBO/EBO headers + shapeGen.h
-├── Source Files/            Shader/VAO/VBO/EBO classes
-├── Resource Files/Shaders/  GLSL vertex/fragment shaders
-├── include/
+├── CMakeLists.txt  Makefile  README.md  control_points.txt (course file)
+├── external/                 optional freeglut sources
+├── Header/                   MathUtils  Window  ShaderProgram  VertexBuffer  OrbitCamera
+│                             Mesh  BezierPatch  Surfaces  Framebuffer  Texture   (Parts 1-2, texture)
+│                             PatchModel  PhongScene                                (Part 3)
+│                             shaderClass  VAO  VBO  smfLoader  modelData  materials  orbit   (Assignment 3)
+├── Source Files/             implementations
+├── parts/                    the four programs
+├── Resource Files/Shaders/   part1 / part2 / part3a / part3b .vert .frag, marker .vert .frag
+├── models/                   SMF models (bound-lo-sphere, bound-bunny_1k, teapot)
+├── include/                  glad/  KHR/
 └── src/glad.c
 ```

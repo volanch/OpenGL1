@@ -1,7 +1,6 @@
-#for macOS and Linux
 BUILD_DIR := build
 
-.PHONY: all build run-red_triangle run-blue_square run-polygons_part1 run-polygons_part2 clean
+.PHONY: all build run-part1 run-part2 run-part3a run-part3b clean
 
 all: build
 
@@ -9,17 +8,17 @@ build:
 	cmake -S . -B $(BUILD_DIR) -DCMAKE_BUILD_TYPE=Release
 	cmake --build $(BUILD_DIR) --config Release
 
-run-red_triangle: build
-	cd $(BUILD_DIR) && ./red_triangle
+run-part1: build
+	cd $(BUILD_DIR) && ./part1_bezier
 
-run-blue_square: build
-	cd $(BUILD_DIR) && ./blue_square
+run-part2: build
+	cd $(BUILD_DIR) && ./part2_picking
 
-run-polygons_part1: build
-	cd $(BUILD_DIR) && ./polygons_part1
+run-part3a: build
+	cd $(BUILD_DIR) && ./part3a_texture_patch
 
-run-polygons_part2: build
-	cd $(BUILD_DIR) && ./polygons_part2
+run-part3b: build
+	cd $(BUILD_DIR) && ./part3b_procedural
 
 clean:
 	rm -rf $(BUILD_DIR)
